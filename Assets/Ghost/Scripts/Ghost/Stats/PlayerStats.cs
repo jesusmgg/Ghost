@@ -1,4 +1,5 @@
 ﻿using Ghost.Mechanics;
+using Ghost.Weapons.Projectiles;
 using UnityEngine;
 
 namespace Ghost.Stats
@@ -28,6 +29,8 @@ namespace Ghost.Stats
         void OnTriggerEnter2D(Collider2D other)
         {
             HealthModifier hm = other.gameObject.GetComponent<HealthModifier>();
+            BaseProjectile projectile = other.gameObject.GetComponent<BaseProjectile>();
+            
             if (hm != null)
             {
                 if (CompareTag(hm.targetTag))
@@ -37,6 +40,19 @@ namespace Ghost.Stats
                         health += hm.healthDelta;    
                     }
                 }
+            }
+
+            else if (projectile != null)
+            {
+                if (CompareTag(projectile.targetTag))
+                {
+                    health -= projectile.damage;
+                }
+            }
+
+            else if (other.CompareTag("Enemy"))
+            {
+                health -= 1;
             }
         }
     }

@@ -1,0 +1,4799 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fd4016cde4e2bc4ea2f88cf390d0ad5, type: 3}
+  m_Name: enemy1
+  m_EditorClassIdentifier: 
+  Spriter:
+    Folders:
+    - Id: 0
+      Name: 
+      Files:
+      - Id: 0
+        Name: zombie-dog_0001_face.png
+        Type: 0
+        PivotX: 0.210811
+        PivotY: 0.119048
+        Width: 185
+        Height: 168
+      - Id: 1
+        Name: zombie-dog_0002_body.png
+        Type: 0
+        PivotX: 0.504732
+        PivotY: 0.41
+        Width: 317
+        Height: 200
+      - Id: 2
+        Name: zombie-dog_0003_tail.png
+        Type: 0
+        PivotX: 0.860215
+        PivotY: 0.055556
+        Width: 93
+        Height: 162
+      - Id: 3
+        Name: zombie-dog_0004_left-leg-1.png
+        Type: 0
+        PivotX: 0.73913
+        PivotY: 0.887755
+        Width: 23
+        Height: 98
+      - Id: 4
+        Name: zombie-dog_0005_left--leg-2.png
+        Type: 0
+        PivotX: 0.541667
+        PivotY: 0.884615
+        Width: 24
+        Height: 104
+      - Id: 5
+        Name: zombie-dog_0006_right-leg-1.png
+        Type: 0
+        PivotX: 0.416667
+        PivotY: 0.835052
+        Width: 24
+        Height: 97
+      - Id: 6
+        Name: zombie-dog_0007_right-leg-2.png
+        Type: 0
+        PivotX: 0.5
+        PivotY: 0.885417
+        Width: 24
+        Height: 96
+    Entities:
+    - Id: 0
+      Name: entity_000
+      ObjectInfos:
+      - Id: 0
+        Name: bone_000
+        ObjectType: 1
+        Width: 187.003
+        Height: 10
+        PivotX: 0
+        PivotY: 0
+        Variables: []
+      - Id: 0
+        Name: bone_001
+        ObjectType: 1
+        Width: 110.86
+        Height: 10
+        PivotX: 0
+        PivotY: 0
+        Variables: []
+      - Id: 0
+        Name: bone_002
+        ObjectType: 1
+        Width: 170.892
+        Height: 10
+        PivotX: 0
+        PivotY: 0
+        Variables: []
+      - Id: 0
+        Name: bone_003
+        ObjectType: 1
+        Width: 96.0052
+        Height: 10
+        PivotX: 0
+        PivotY: 0
+        Variables: []
+      - Id: 0
+        Name: bone_004
+        ObjectType: 1
+        Width: 80.1561
+        Height: 10
+        PivotX: 0
+        PivotY: 0
+        Variables: []
+      - Id: 0
+        Name: bone_005
+        ObjectType: 1
+        Width: 99.0051
+        Height: 10
+        PivotX: 0
+        PivotY: 0
+        Variables: []
+      - Id: 0
+        Name: bone_006
+        ObjectType: 1
+        Width: 90.0222
+        Height: 10
+        PivotX: 0
+        PivotY: 0
+        Variables: []
+      CharacterMaps: []
+      Animations:
+      - Id: 0
+        Name: Idle
+        Length: 1000
+        Looping: 1
+        MainlineKeys:
+        - Id: 0
+          Name: 
+          Time: 0
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 7
+            KeyId: 0
+          - Id: 1
+            Name: 
+            ParentId: -1
+            TimelineId: 8
+            KeyId: 0
+          - Id: 2
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 0
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 10
+            KeyId: 0
+          - Id: 4
+            Name: 
+            ParentId: -1
+            TimelineId: 11
+            KeyId: 0
+          - Id: 5
+            Name: 
+            ParentId: -1
+            TimelineId: 12
+            KeyId: 0
+          - Id: 6
+            Name: 
+            ParentId: -1
+            TimelineId: 13
+            KeyId: 0
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 2
+            TimelineId: 2
+            KeyId: 0
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 5
+            TimelineId: 4
+            KeyId: 0
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 6
+            TimelineId: 3
+            KeyId: 0
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 4
+            TimelineId: 6
+            KeyId: 0
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 3
+            TimelineId: 5
+            KeyId: 0
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 0
+            TimelineId: 1
+            KeyId: 0
+            ZIndex: 5
+          - Id: 6
+            Name: 
+            ParentId: 1
+            TimelineId: 0
+            KeyId: 0
+            ZIndex: 6
+        - Id: 1
+          Name: 
+          Time: 150
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 7
+            KeyId: 0
+          - Id: 1
+            Name: 
+            ParentId: -1
+            TimelineId: 8
+            KeyId: 0
+          - Id: 2
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 0
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 10
+            KeyId: 1
+          - Id: 4
+            Name: 
+            ParentId: -1
+            TimelineId: 11
+            KeyId: 1
+          - Id: 5
+            Name: 
+            ParentId: -1
+            TimelineId: 12
+            KeyId: 1
+          - Id: 6
+            Name: 
+            ParentId: -1
+            TimelineId: 13
+            KeyId: 1
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 2
+            TimelineId: 2
+            KeyId: 0
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 5
+            TimelineId: 4
+            KeyId: 0
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 6
+            TimelineId: 3
+            KeyId: 0
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 4
+            TimelineId: 6
+            KeyId: 0
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 3
+            TimelineId: 5
+            KeyId: 0
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 0
+            TimelineId: 1
+            KeyId: 0
+            ZIndex: 5
+          - Id: 6
+            Name: 
+            ParentId: 1
+            TimelineId: 0
+            KeyId: 0
+            ZIndex: 6
+        - Id: 2
+          Name: 
+          Time: 497
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 7
+            KeyId: 0
+          - Id: 1
+            Name: 
+            ParentId: -1
+            TimelineId: 8
+            KeyId: 0
+          - Id: 2
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 1
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 10
+            KeyId: 1
+          - Id: 4
+            Name: 
+            ParentId: -1
+            TimelineId: 11
+            KeyId: 1
+          - Id: 5
+            Name: 
+            ParentId: -1
+            TimelineId: 12
+            KeyId: 1
+          - Id: 6
+            Name: 
+            ParentId: -1
+            TimelineId: 13
+            KeyId: 1
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 2
+            TimelineId: 2
+            KeyId: 0
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 5
+            TimelineId: 4
+            KeyId: 0
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 6
+            TimelineId: 3
+            KeyId: 0
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 4
+            TimelineId: 6
+            KeyId: 0
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 3
+            TimelineId: 5
+            KeyId: 0
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 0
+            TimelineId: 1
+            KeyId: 1
+            ZIndex: 5
+          - Id: 6
+            Name: 
+            ParentId: 1
+            TimelineId: 0
+            KeyId: 1
+            ZIndex: 6
+        - Id: 3
+          Name: 
+          Time: 899
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 7
+            KeyId: 0
+          - Id: 1
+            Name: 
+            ParentId: -1
+            TimelineId: 8
+            KeyId: 0
+          - Id: 2
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 1
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 10
+            KeyId: 2
+          - Id: 4
+            Name: 
+            ParentId: -1
+            TimelineId: 11
+            KeyId: 2
+          - Id: 5
+            Name: 
+            ParentId: -1
+            TimelineId: 12
+            KeyId: 2
+          - Id: 6
+            Name: 
+            ParentId: -1
+            TimelineId: 13
+            KeyId: 2
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 2
+            TimelineId: 2
+            KeyId: 0
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 5
+            TimelineId: 4
+            KeyId: 0
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 6
+            TimelineId: 3
+            KeyId: 0
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 4
+            TimelineId: 6
+            KeyId: 0
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 3
+            TimelineId: 5
+            KeyId: 0
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 0
+            TimelineId: 1
+            KeyId: 1
+            ZIndex: 5
+          - Id: 6
+            Name: 
+            ParentId: 1
+            TimelineId: 0
+            KeyId: 1
+            ZIndex: 6
+        Timelines:
+        - Id: 0
+          Name: zombie-dog_0001_face
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 15.596209
+              Y: -1.325993
+              Angle: 291.70544
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.210811
+              PivotY: 0.119048
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 497
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 17.619907
+              Y: 1.819368
+              Angle: 291.70544
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.210811
+              PivotY: 0.119048
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 1
+          Name: zombie-dog_0002_body
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 137.01408
+              Y: -2.267347
+              Angle: 270.3064
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 1
+              PivotX: 0.504732
+              PivotY: 0.41
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 497
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 137.01408
+              Y: -2.267347
+              Angle: 270.3064
+              ScaleX: 0.970263
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 1
+              PivotX: 0.504732
+              PivotY: 0.41
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 2
+          Name: zombie-dog_0003_tail
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 2.211926
+              Y: -0.327693
+              Angle: 235.00798
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 2
+              PivotX: 0.860215
+              PivotY: 0.055556
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 3
+          Name: zombie-dog_0004_left-leg-1
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 10.153049
+              Y: 6.776105
+              Angle: 88.72697
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 3
+              PivotX: 0.73913
+              PivotY: 0.887755
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 4
+          Name: zombie-dog_0005_left--leg-2
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 11.02974
+              Y: 2.888742
+              Angle: 89.42127
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 4
+              PivotX: 0.541667
+              PivotY: 0.884615
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 5
+          Name: zombie-dog_0006_right-leg-1
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 19.988499
+              Y: -1.208268
+              Angle: 89.40319
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 5
+              PivotX: 0.416667
+              PivotY: 0.835052
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 6
+          Name: zombie-dog_0007_right-leg-2
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0.062378
+              Y: -0.998053
+              Angle: 93.57633
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 6
+              PivotX: 0.5
+              PivotY: 0.885417
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 7
+          Name: bone_000
+          ObjectType: 1
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: -15
+              Y: 5
+              Angle: 89.69361
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 8
+          Name: bone_001
+          ObjectType: 1
+          ObjectId: 1
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 92
+              Y: 174
+              Angle: 68.29456
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 9
+          Name: bone_002
+          ObjectType: 1
+          ObjectId: 2
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: -130
+              Y: 173
+              Angle: 124.99202
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 497
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: -130
+              Y: 173
+              Angle: 110.110695
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 10
+          Name: bone_003
+          ObjectType: 1
+          ObjectId: 3
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: -127
+              Y: 108
+              Angle: 270.5968
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 150
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: -127
+              Y: 108
+              Angle: 264.11417
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 2
+            Name: 
+            Time: 899
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: -120.87755
+              Y: 110.04082
+              Angle: 279.0943
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 11
+          Name: bone_004
+          ObjectType: 1
+          ObjectId: 4
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: -85
+              Y: 112
+              Angle: 266.42368
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 150
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: -85
+              Y: 112
+              Angle: 257.4079
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 2
+            Name: 
+            Time: 899
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: -78.87755
+              Y: 113.02041
+              Angle: 273.71967
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 12
+          Name: bone_005
+          ObjectType: 1
+          ObjectId: 5
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 59
+              Y: 110
+              Angle: 270.57874
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 150
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 59
+              Y: 110
+              Angle: 263.61353
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 2
+            Name: 
+            Time: 899
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 59
+              Y: 110
+              Angle: 274.78677
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 13
+          Name: bone_006
+          ObjectType: 1
+          ObjectId: 6
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 108
+              Y: 112
+              Angle: 271.27304
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 150
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 108
+              Y: 112
+              Angle: 256.96057
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 2
+            Name: 
+            Time: 899
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 108
+              Y: 112
+              Angle: 269.40408
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        Eventlines: []
+        Soundlines: []
+        Meta:
+          Varlines: []
+          Tagline:
+            Keys: []
+      - Id: 1
+        Name: Dying
+        Length: 400
+        Looping: 0
+        MainlineKeys:
+        - Id: 0
+          Name: 
+          Time: 0
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 7
+            KeyId: 0
+          - Id: 1
+            Name: 
+            ParentId: -1
+            TimelineId: 8
+            KeyId: 0
+          - Id: 2
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 0
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 10
+            KeyId: 0
+          - Id: 4
+            Name: 
+            ParentId: -1
+            TimelineId: 11
+            KeyId: 0
+          - Id: 5
+            Name: 
+            ParentId: -1
+            TimelineId: 12
+            KeyId: 0
+          - Id: 6
+            Name: 
+            ParentId: -1
+            TimelineId: 13
+            KeyId: 0
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 2
+            TimelineId: 2
+            KeyId: 0
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 5
+            TimelineId: 4
+            KeyId: 0
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 6
+            TimelineId: 3
+            KeyId: 0
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 4
+            TimelineId: 6
+            KeyId: 0
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 3
+            TimelineId: 5
+            KeyId: 0
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 0
+            TimelineId: 1
+            KeyId: 0
+            ZIndex: 5
+          - Id: 6
+            Name: 
+            ParentId: 1
+            TimelineId: 0
+            KeyId: 0
+            ZIndex: 6
+        - Id: 1
+          Name: 
+          Time: 99
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 7
+            KeyId: 0
+          - Id: 1
+            Name: 
+            ParentId: -1
+            TimelineId: 8
+            KeyId: 1
+          - Id: 2
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 1
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 10
+            KeyId: 1
+          - Id: 4
+            Name: 
+            ParentId: -1
+            TimelineId: 11
+            KeyId: 1
+          - Id: 5
+            Name: 
+            ParentId: -1
+            TimelineId: 12
+            KeyId: 1
+          - Id: 6
+            Name: 
+            ParentId: -1
+            TimelineId: 13
+            KeyId: 1
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 2
+            TimelineId: 2
+            KeyId: 0
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 5
+            TimelineId: 4
+            KeyId: 0
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 6
+            TimelineId: 3
+            KeyId: 0
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 4
+            TimelineId: 6
+            KeyId: 0
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 3
+            TimelineId: 5
+            KeyId: 0
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 0
+            TimelineId: 1
+            KeyId: 1
+            ZIndex: 5
+          - Id: 6
+            Name: 
+            ParentId: 1
+            TimelineId: 0
+            KeyId: 1
+            ZIndex: 6
+        - Id: 2
+          Name: 
+          Time: 299
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 7
+            KeyId: 1
+          - Id: 1
+            Name: 
+            ParentId: -1
+            TimelineId: 8
+            KeyId: 2
+          - Id: 2
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 2
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 10
+            KeyId: 2
+          - Id: 4
+            Name: 
+            ParentId: -1
+            TimelineId: 11
+            KeyId: 2
+          - Id: 5
+            Name: 
+            ParentId: -1
+            TimelineId: 12
+            KeyId: 2
+          - Id: 6
+            Name: 
+            ParentId: -1
+            TimelineId: 13
+            KeyId: 2
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 2
+            TimelineId: 2
+            KeyId: 1
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 5
+            TimelineId: 4
+            KeyId: 0
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 6
+            TimelineId: 3
+            KeyId: 0
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 4
+            TimelineId: 6
+            KeyId: 0
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 3
+            TimelineId: 5
+            KeyId: 0
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 0
+            TimelineId: 1
+            KeyId: 1
+            ZIndex: 5
+          - Id: 6
+            Name: 
+            ParentId: 1
+            TimelineId: 0
+            KeyId: 1
+            ZIndex: 6
+        - Id: 3
+          Name: 
+          Time: 398
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 7
+            KeyId: 2
+          - Id: 1
+            Name: 
+            ParentId: -1
+            TimelineId: 8
+            KeyId: 3
+          - Id: 2
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 3
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 10
+            KeyId: 3
+          - Id: 4
+            Name: 
+            ParentId: -1
+            TimelineId: 11
+            KeyId: 3
+          - Id: 5
+            Name: 
+            ParentId: -1
+            TimelineId: 12
+            KeyId: 3
+          - Id: 6
+            Name: 
+            ParentId: -1
+            TimelineId: 13
+            KeyId: 3
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 2
+            TimelineId: 2
+            KeyId: 2
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 5
+            TimelineId: 4
+            KeyId: 1
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 6
+            TimelineId: 3
+            KeyId: 1
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 4
+            TimelineId: 6
+            KeyId: 1
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 3
+            TimelineId: 5
+            KeyId: 1
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 0
+            TimelineId: 1
+            KeyId: 2
+            ZIndex: 5
+          - Id: 6
+            Name: 
+            ParentId: 1
+            TimelineId: 0
+            KeyId: 2
+            ZIndex: 6
+        Timelines:
+        - Id: 0
+          Name: zombie-dog_0001_face
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 15.596209
+              Y: -1.325993
+              Angle: 291.70544
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.210811
+              PivotY: 0.119048
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 99
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 23.826933
+              Y: -2.191071
+              Angle: 291.70544
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.210811
+              PivotY: 0.119048
+              T: 0
+          - Id: 2
+            Name: 
+            Time: 398
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 15.596209
+              Y: -1.325993
+              Angle: 291.70544
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.210811
+              PivotY: 0.119048
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 1
+          Name: zombie-dog_0002_body
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 137.01408
+              Y: -2.267347
+              Angle: 270.3064
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 1
+              PivotX: 0.504732
+              PivotY: 0.41
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 99
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 146.6103
+              Y: -3.585913
+              Angle: 270.3064
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 1
+              PivotX: 0.504732
+              PivotY: 0.41
+              T: 0
+          - Id: 2
+            Name: 
+            Time: 398
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 137.01408
+              Y: -2.267347
+              Angle: 270.3064
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 1
+              PivotX: 0.504732
+              PivotY: 0.41
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 2
+          Name: zombie-dog_0003_tail
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 2.211926
+              Y: -0.327693
+              Angle: 235.00798
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 2
+              PivotX: 0.860215
+              PivotY: 0.055556
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 299
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 2.211926
+              Y: -0.327693
+              Angle: 235.00798
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 0.38621
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 2
+              PivotX: 0.860215
+              PivotY: 0.055556
+              T: 0
+          - Id: 2
+            Name: 
+            Time: 398
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 2.211926
+              Y: -0.327693
+              Angle: 235.00798
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 2
+              PivotX: 0.860215
+              PivotY: 0.055556
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 3
+          Name: zombie-dog_0004_left-leg-1
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 10.153049
+              Y: 6.776105
+              Angle: 88.72697
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 3
+              PivotX: 0.73913
+              PivotY: 0.887755
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 398
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 10.153049
+              Y: 6.776105
+              Angle: 88.72697
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 3
+              PivotX: 0.73913
+              PivotY: 0.887755
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 4
+          Name: zombie-dog_0005_left--leg-2
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 11.02974
+              Y: 2.888742
+              Angle: 89.42127
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 4
+              PivotX: 0.541667
+              PivotY: 0.884615
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 398
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 11.02974
+              Y: 2.888742
+              Angle: 89.42127
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 4
+              PivotX: 0.541667
+              PivotY: 0.884615
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 5
+          Name: zombie-dog_0006_right-leg-1
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 19.988499
+              Y: -1.208268
+              Angle: 89.40319
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 5
+              PivotX: 0.416667
+              PivotY: 0.835052
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 398
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 19.988499
+              Y: -1.208268
+              Angle: 89.40319
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 5
+              PivotX: 0.416667
+              PivotY: 0.835052
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 6
+          Name: zombie-dog_0007_right-leg-2
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0.062378
+              Y: -0.998053
+              Angle: 93.57633
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 6
+              PivotX: 0.5
+              PivotY: 0.885417
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 398
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0.062378
+              Y: -0.998053
+              Angle: 93.57633
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 6
+              PivotX: 0.5
+              PivotY: 0.885417
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 7
+          Name: bone_000
+          ObjectType: 1
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: -15
+              Y: 5
+              Angle: 89.69361
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 299
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: -15.729927
+              Y: -19.817518
+              Angle: 89.69361
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 2
+            Name: 
+            Time: 398
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: -15
+              Y: 5
+              Angle: 89.69361
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 0
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 8
+          Name: bone_001
+          ObjectType: 1
+          ObjectId: 1
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 92
+              Y: 174
+              Angle: 68.29456
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 99
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 92
+              Y: 174
+              Angle: 71.556
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 2
+            Name: 
+            Time: 299
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 91.27007
+              Y: 149.18248
+              Angle: 73.41826
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 3
+            Name: 
+            Time: 398
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 92
+              Y: 174
+              Angle: 68.29456
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 0
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 9
+          Name: bone_002
+          ObjectType: 1
+          ObjectId: 2
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: -130
+              Y: 173
+              Angle: 124.99202
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 99
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: -130
+              Y: 173
+              Angle: 153.5526
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 2
+            Name: 
+            Time: 299
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: -130.72992
+              Y: 148.18248
+              Angle: 146.35904
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 3
+            Name: 
+            Time: 398
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: -130
+              Y: 173
+              Angle: 124.99202
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 0
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 10
+          Name: bone_003
+          ObjectType: 1
+          ObjectId: 3
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: -127
+              Y: 108
+              Angle: 270.5968
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 99
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: -127
+              Y: 108
+              Angle: 236.27513
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 2
+            Name: 
+            Time: 299
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: -127.72993
+              Y: 83.18248
+              Angle: 244.91974
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 0.26207
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 3
+            Name: 
+            Time: 398
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: -127
+              Y: 108
+              Angle: 270.5968
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 0
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 11
+          Name: bone_004
+          ObjectType: 1
+          ObjectId: 4
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: -85
+              Y: 112
+              Angle: 266.42368
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 99
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: -85
+              Y: 112
+              Angle: 231.83478
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 2
+            Name: 
+            Time: 299
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: -85.72993
+              Y: 87.18248
+              Angle: 240.54669
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 0.4
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 3
+            Name: 
+            Time: 398
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: -85
+              Y: 112
+              Angle: 266.42368
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 0
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 12
+          Name: bone_005
+          ObjectType: 1
+          ObjectId: 5
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 59
+              Y: 110
+              Angle: 270.57874
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 99
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 59
+              Y: 110
+              Angle: 296.48386
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 2
+            Name: 
+            Time: 299
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 58.270073
+              Y: 85.18248
+              Angle: 289.95914
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 0.22069
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 3
+            Name: 
+            Time: 398
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 59
+              Y: 110
+              Angle: 270.57874
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 0
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 13
+          Name: bone_006
+          ObjectType: 1
+          ObjectId: 6
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 108
+              Y: 112
+              Angle: 271.27304
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 99
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 108
+              Y: 112
+              Angle: 304.1449
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 2
+            Name: 
+            Time: 299
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 107.27007
+              Y: 87.18248
+              Angle: 295.86545
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 0.30345
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 3
+            Name: 
+            Time: 398
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 108
+              Y: 112
+              Angle: 271.27304
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 0
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        Eventlines: []
+        Soundlines: []
+        Meta:
+          Varlines: []
+          Tagline:
+            Keys: []
+      - Id: 2
+        Name: Throwing
+        Length: 800
+        Looping: 0
+        MainlineKeys:
+        - Id: 0
+          Name: 
+          Time: 0
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 7
+            KeyId: 0
+          - Id: 1
+            Name: 
+            ParentId: -1
+            TimelineId: 8
+            KeyId: 0
+          - Id: 2
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 0
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 10
+            KeyId: 0
+          - Id: 4
+            Name: 
+            ParentId: -1
+            TimelineId: 11
+            KeyId: 0
+          - Id: 5
+            Name: 
+            ParentId: -1
+            TimelineId: 12
+            KeyId: 0
+          - Id: 6
+            Name: 
+            ParentId: -1
+            TimelineId: 13
+            KeyId: 0
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 2
+            TimelineId: 2
+            KeyId: 0
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 5
+            TimelineId: 4
+            KeyId: 0
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 6
+            TimelineId: 3
+            KeyId: 0
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 4
+            TimelineId: 6
+            KeyId: 0
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 3
+            TimelineId: 5
+            KeyId: 0
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 0
+            TimelineId: 1
+            KeyId: 0
+            ZIndex: 5
+          - Id: 6
+            Name: 
+            ParentId: 1
+            TimelineId: 0
+            KeyId: 0
+            ZIndex: 6
+        - Id: 1
+          Name: 
+          Time: 150
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 7
+            KeyId: 0
+          - Id: 1
+            Name: 
+            ParentId: -1
+            TimelineId: 8
+            KeyId: 0
+          - Id: 2
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 1
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 10
+            KeyId: 0
+          - Id: 4
+            Name: 
+            ParentId: -1
+            TimelineId: 11
+            KeyId: 0
+          - Id: 5
+            Name: 
+            ParentId: -1
+            TimelineId: 12
+            KeyId: 1
+          - Id: 6
+            Name: 
+            ParentId: -1
+            TimelineId: 13
+            KeyId: 0
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 2
+            TimelineId: 2
+            KeyId: 0
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 5
+            TimelineId: 4
+            KeyId: 0
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 6
+            TimelineId: 3
+            KeyId: 0
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 4
+            TimelineId: 6
+            KeyId: 0
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 3
+            TimelineId: 5
+            KeyId: 0
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 0
+            TimelineId: 1
+            KeyId: 0
+            ZIndex: 5
+          - Id: 6
+            Name: 
+            ParentId: 1
+            TimelineId: 0
+            KeyId: 0
+            ZIndex: 6
+        - Id: 2
+          Name: 
+          Time: 397
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 7
+            KeyId: 0
+          - Id: 1
+            Name: 
+            ParentId: -1
+            TimelineId: 8
+            KeyId: 0
+          - Id: 2
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 2
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 10
+            KeyId: 1
+          - Id: 4
+            Name: 
+            ParentId: -1
+            TimelineId: 11
+            KeyId: 1
+          - Id: 5
+            Name: 
+            ParentId: -1
+            TimelineId: 12
+            KeyId: 2
+          - Id: 6
+            Name: 
+            ParentId: -1
+            TimelineId: 13
+            KeyId: 1
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 2
+            TimelineId: 2
+            KeyId: 0
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 5
+            TimelineId: 4
+            KeyId: 0
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 6
+            TimelineId: 3
+            KeyId: 0
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 4
+            TimelineId: 6
+            KeyId: 0
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 3
+            TimelineId: 5
+            KeyId: 0
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 0
+            TimelineId: 1
+            KeyId: 1
+            ZIndex: 5
+          - Id: 6
+            Name: 
+            ParentId: 1
+            TimelineId: 0
+            KeyId: 1
+            ZIndex: 6
+        - Id: 3
+          Name: 
+          Time: 698
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 7
+            KeyId: 1
+          - Id: 1
+            Name: 
+            ParentId: -1
+            TimelineId: 8
+            KeyId: 1
+          - Id: 2
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 3
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 10
+            KeyId: 2
+          - Id: 4
+            Name: 
+            ParentId: -1
+            TimelineId: 11
+            KeyId: 2
+          - Id: 5
+            Name: 
+            ParentId: -1
+            TimelineId: 12
+            KeyId: 3
+          - Id: 6
+            Name: 
+            ParentId: -1
+            TimelineId: 13
+            KeyId: 2
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 2
+            TimelineId: 2
+            KeyId: 1
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 5
+            TimelineId: 4
+            KeyId: 1
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 6
+            TimelineId: 3
+            KeyId: 1
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 4
+            TimelineId: 6
+            KeyId: 1
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 3
+            TimelineId: 5
+            KeyId: 1
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 0
+            TimelineId: 1
+            KeyId: 2
+            ZIndex: 5
+          - Id: 6
+            Name: 
+            ParentId: 1
+            TimelineId: 0
+            KeyId: 2
+            ZIndex: 6
+        Timelines:
+        - Id: 0
+          Name: zombie-dog_0001_face
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 15.596209
+              Y: -1.325993
+              Angle: 291.70544
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.210811
+              PivotY: 0.119048
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 397
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 27.12111
+              Y: 4.464173
+              Angle: 291.70544
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.210811
+              PivotY: 0.119048
+              T: 0
+          - Id: 2
+            Name: 
+            Time: 698
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 15.596209
+              Y: -1.325993
+              Angle: 291.70544
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.210811
+              PivotY: 0.119048
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 1
+          Name: zombie-dog_0002_body
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 137.01408
+              Y: -2.267347
+              Angle: 270.3064
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 1
+              PivotX: 0.504732
+              PivotY: 0.41
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 397
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 142.014
+              Y: -2.24061
+              Angle: 270.3064
+              ScaleX: 1
+              ScaleY: 1.055138
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 1
+              PivotX: 0.504732
+              PivotY: 0.41
+              T: 0
+          - Id: 2
+            Name: 
+            Time: 698
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 137.01408
+              Y: -2.267347
+              Angle: 270.3064
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 1
+              PivotX: 0.504732
+              PivotY: 0.41
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 2
+          Name: zombie-dog_0003_tail
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 2.211926
+              Y: -0.327693
+              Angle: 235.00798
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 2
+              PivotX: 0.860215
+              PivotY: 0.055556
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 698
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 2.211926
+              Y: -0.327693
+              Angle: 235.00798
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 2
+              PivotX: 0.860215
+              PivotY: 0.055556
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 3
+          Name: zombie-dog_0004_left-leg-1
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 10.153049
+              Y: 6.776105
+              Angle: 88.72697
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 3
+              PivotX: 0.73913
+              PivotY: 0.887755
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 698
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 10.153049
+              Y: 6.776105
+              Angle: 88.72697
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 3
+              PivotX: 0.73913
+              PivotY: 0.887755
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 4
+          Name: zombie-dog_0005_left--leg-2
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 11.02974
+              Y: 2.888742
+              Angle: 89.42127
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 4
+              PivotX: 0.541667
+              PivotY: 0.884615
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 698
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 11.02974
+              Y: 2.888742
+              Angle: 89.42127
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 4
+              PivotX: 0.541667
+              PivotY: 0.884615
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 5
+          Name: zombie-dog_0006_right-leg-1
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 19.988499
+              Y: -1.208268
+              Angle: 89.40319
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 5
+              PivotX: 0.416667
+              PivotY: 0.835052
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 698
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 19.988499
+              Y: -1.208268
+              Angle: 89.40319
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 5
+              PivotX: 0.416667
+              PivotY: 0.835052
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 6
+          Name: zombie-dog_0007_right-leg-2
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0.062378
+              Y: -0.998053
+              Angle: 93.57633
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 6
+              PivotX: 0.5
+              PivotY: 0.885417
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 698
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0.062378
+              Y: -0.998053
+              Angle: 93.57633
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 6
+              PivotX: 0.5
+              PivotY: 0.885417
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 7
+          Name: bone_000
+          ObjectType: 1
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: -15
+              Y: 5
+              Angle: 89.69361
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 698
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: -15
+              Y: 5
+              Angle: 89.69361
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 8
+          Name: bone_001
+          ObjectType: 1
+          ObjectId: 1
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 92
+              Y: 174
+              Angle: 68.29456
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 698
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 92
+              Y: 174
+              Angle: 68.29456
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 9
+          Name: bone_002
+          ObjectType: 1
+          ObjectId: 2
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: -130
+              Y: 173
+              Angle: 124.99202
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 150
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: -130
+              Y: 173
+              Angle: 129.02617
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 2
+            Name: 
+            Time: 397
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: -130
+              Y: 173
+              Angle: 117.46117
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 3
+            Name: 
+            Time: 698
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: -130
+              Y: 173
+              Angle: 117.46117
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 10
+          Name: bone_003
+          ObjectType: 1
+          ObjectId: 3
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: -127
+              Y: 108
+              Angle: 270.5968
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 397
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: -127
+              Y: 108
+              Angle: 275.74808
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 2
+            Name: 
+            Time: 698
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: -127
+              Y: 108
+              Angle: 275.74808
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 11
+          Name: bone_004
+          ObjectType: 1
+          ObjectId: 4
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: -85
+              Y: 112
+              Angle: 266.42368
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 397
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: -85
+              Y: 112
+              Angle: 273.0075
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 2
+            Name: 
+            Time: 698
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: -85
+              Y: 112
+              Angle: 273.0075
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 12
+          Name: bone_005
+          ObjectType: 1
+          ObjectId: 5
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 59
+              Y: 110
+              Angle: 270.57874
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 150
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 59
+              Y: 110
+              Angle: 253.18336
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 2
+            Name: 
+            Time: 397
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 59
+              Y: 110
+              Angle: 310.44415
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 3
+            Name: 
+            Time: 698
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 59
+              Y: 110
+              Angle: 318.66055
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 13
+          Name: bone_006
+          ObjectType: 1
+          ObjectId: 6
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 108
+              Y: 112
+              Angle: 271.27304
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 397
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 107.65278
+              Y: 115.47222
+              Angle: 271.27304
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          - Id: 2
+            Name: 
+            Time: 698
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 107.65278
+              Y: 115.47222
+              Angle: 271.27304
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        Eventlines: []
+        Soundlines: []
+        Meta:
+          Varlines: []
+          Tagline:
+            Keys: []
+      Variables: []
+    Tags: []
+  FileEntries:
+  - FolderId: 0
+    FileId: 0
+    Sprite: {fileID: 21300000, guid: f1a580e7734e7664ba768f453511e7b1, type: 3}
+    Sound: {fileID: 0}
+  - FolderId: 0
+    FileId: 1
+    Sprite: {fileID: 21300000, guid: c2ca78ad196fe614ba5b18e69ab67401, type: 3}
+    Sound: {fileID: 0}
+  - FolderId: 0
+    FileId: 2
+    Sprite: {fileID: 21300000, guid: 173063486e196bc469fc4d40c6643850, type: 3}
+    Sound: {fileID: 0}
+  - FolderId: 0
+    FileId: 3
+    Sprite: {fileID: 21300000, guid: daacc16ef73f0a14297ff42d59133255, type: 3}
+    Sound: {fileID: 0}
+  - FolderId: 0
+    FileId: 4
+    Sprite: {fileID: 21300000, guid: 046424e77cfdea543aa561e3be0853fa, type: 3}
+    Sound: {fileID: 0}
+  - FolderId: 0
+    FileId: 5
+    Sprite: {fileID: 21300000, guid: 4f67dcf7932f7b242b51b98dc2689ad0, type: 3}
+    Sound: {fileID: 0}
+  - FolderId: 0
+    FileId: 6
+    Sprite: {fileID: 21300000, guid: 26247da2d00d2ec4eb4ae19568dfce47, type: 3}
+    Sound: {fileID: 0}

@@ -1,5 +1,6 @@
 ﻿using Ghost.Input;
 using Ghost.Physics;
+using SpriterDotNetUnity;
 using UnityEngine;
 
 namespace Ghost.Animation
@@ -26,11 +27,10 @@ namespace Ghost.Animation
                 localScale.x = -localScale.x;
                 transform.localScale = localScale;
             }
-            
-            animator.SetBool("grounded", physicsObject.Grounded);
-            animator.SetFloat("velocityX", Mathf.Abs(physicsObject.Velocity.x));
-            animator.SetFloat("velocityY", physicsObject.Velocity.y);
-            animator.SetBool("jump", input.GetButtonDown("Jump"));
+            animator.SetBool("Grounded", physicsObject.Grounded);
+            animator.SetFloat("VelocityX", Mathf.Abs(physicsObject.Velocity.x));
+            animator.SetFloat("VelocityY", physicsObject.Velocity.y);
+            animator.SetBool("Jump", input.GetButtonDown("Jump"));
         }
     }
 }

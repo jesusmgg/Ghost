@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="r11">
+    <folder id="0">
+        <file id="0" name="doggo1_0000s_0004_background.png" width="343" height="346" pivot_x="0.5" pivot_y="0.5"/>
+        <file id="1" name="doggo1_0000s_0003_border.png" width="385" height="370" pivot_x="0.5" pivot_y="0.5"/>
+        <file id="2" name="doggo1_0000s_0002_Capa-4.png" width="267" height="246" pivot_x="0.5" pivot_y="0.5"/>
+        <file id="3" name="doggo1_0000s_0001_face-neutral.png" width="84" height="80" pivot_x="0.5" pivot_y="0.5"/>
+        <file id="4" name="doggo1_0000s_0000_face-evil.png" width="97" height="83" pivot_x="0.5" pivot_y="0.5"/>
+    </folder>
+    <entity id="0" name="doggo1">
+        <obj_info name="bone_000" type="bone" w="291.4" h="10"/>
+        <animation id="0" name="iddle" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <bone_ref id="0" timeline="4" key="0"/>
+                    <object_ref id="0" parent="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" parent="0" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" parent="0" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" parent="0" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" timeline="5" key="0" z_index="4"/>
+                </key>
+                <key id="1" time="501">
+                    <bone_ref id="0" timeline="4" key="1"/>
+                    <object_ref id="0" parent="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" parent="0" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" parent="0" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" parent="0" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" timeline="5" key="1" z_index="4"/>
+                </key>
+                <key id="2" time="700">
+                    <bone_ref id="0" timeline="4" key="2"/>
+                    <object_ref id="0" parent="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" parent="0" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" parent="0" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" parent="0" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" timeline="5" key="2" z_index="4"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="doggo1_0000s_0004_background">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="150.565634" y="-24.743929" angle="269.788577"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="doggo1_0000s_0003_border">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="148.280643" y="-14.552633" angle="269.788577"/>
+                </key>
+            </timeline>
+            <timeline id="2" name="doggo1_0000s_0002_Capa-4">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="116.052854" y="-20.858486" angle="269.788577"/>
+                </key>
+            </timeline>
+            <timeline id="3" name="doggo1_0000s_0001_face-neutral">
+                <key id="0" spin="0">
+                    <object folder="0" file="3" x="171.022127" y="14.422788" angle="269.788577"/>
+                </key>
+            </timeline>
+            <timeline id="4" obj="0" name="bone_000" object_type="bone">
+                <key id="0" spin="-1">
+                    <bone x="-21.505376" y="-150.537634" angle="90.211423"/>
+                </key>
+                <key id="1" time="501">
+                    <bone x="-27.323892" y="-138.673249" angle="89.177221"/>
+                </key>
+                <key id="2" time="700" spin="-1">
+                    <bone x="-12.589255" y="-147.266649" angle="94.054773"/>
+                </key>
+            </timeline>
+            <timeline id="5" name="doggo1_0000s_0000_face-evil">
+                <key id="0" spin="-1">
+                    <object folder="0" file="4" x="-30.315427" y="22.544877" angle="0" a="0"/>
+                </key>
+                <key id="1" time="501">
+                    <object folder="0" file="4" x="-33.008499" y="34.540083" angle="358.965798" a="0"/>
+                </key>
+                <key id="2" time="700" spin="-1">
+                    <object folder="0" file="4" x="-32.980223" y="24.829357" angle="3.843351" a="0"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="1" name="Running" length="500" interval="100">
+            <mainline>
+                <key id="0">
+                    <bone_ref id="0" timeline="4" key="0"/>
+                    <object_ref id="0" parent="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" parent="0" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" parent="0" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" parent="0" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" timeline="5" key="0" z_index="4"/>
+                </key>
+                <key id="1" time="100">
+                    <bone_ref id="0" timeline="4" key="1"/>
+                    <object_ref id="0" parent="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" parent="0" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" parent="0" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" parent="0" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" timeline="5" key="1" z_index="4"/>
+                </key>
+                <key id="2" time="198">
+                    <bone_ref id="0" timeline="4" key="2"/>
+                    <object_ref id="0" parent="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" parent="0" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" parent="0" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" parent="0" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" timeline="5" key="2" z_index="4"/>
+                </key>
+                <key id="3" time="299">
+                    <bone_ref id="0" timeline="4" key="3"/>
+                    <object_ref id="0" parent="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" parent="0" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" parent="0" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" parent="0" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" timeline="5" key="3" z_index="4"/>
+                </key>
+                <key id="4" time="397">
+                    <bone_ref id="0" timeline="4" key="4"/>
+                    <object_ref id="0" parent="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" parent="0" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" parent="0" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" parent="0" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" timeline="5" key="4" z_index="4"/>
+                </key>
+                <key id="5" time="500">
+                    <bone_ref id="0" timeline="4" key="4"/>
+                    <object_ref id="0" parent="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" parent="0" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" parent="0" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" parent="0" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" timeline="5" key="4" z_index="4"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="doggo1_0000s_0004_background">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="150.565634" y="-24.743929" angle="269.788577"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="doggo1_0000s_0003_border">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="148.280643" y="-14.552633" angle="269.788577"/>
+                </key>
+            </timeline>
+            <timeline id="2" name="doggo1_0000s_0002_Capa-4">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="116.052854" y="-20.858486" angle="269.788577"/>
+                </key>
+            </timeline>
+            <timeline id="3" name="doggo1_0000s_0001_face-neutral">
+                <key id="0" spin="0">
+                    <object folder="0" file="3" x="171.022127" y="14.422788" angle="269.788577" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="4" obj="0" name="bone_000" object_type="bone">
+                <key id="0" spin="-1">
+                    <bone x="-21.505376" y="-150.537634" angle="90.211423"/>
+                </key>
+                <key id="1" time="100">
+                    <bone x="-56.800936" y="-136.42331" angle="72.394758"/>
+                </key>
+                <key id="2" time="198" spin="-1">
+                    <bone x="-42.066355" y="-125.955922" angle="81.077618"/>
+                </key>
+                <key id="3" time="299">
+                    <bone x="-46.1591" y="-151.136781" angle="80.313275"/>
+                </key>
+                <key id="4" time="397">
+                    <bone x="-44.880643" y="-117.802883" angle="82.338606"/>
+                </key>
+            </timeline>
+            <timeline id="5" name="doggo1_0000s_0000_face-evil">
+                <key id="0" spin="-1">
+                    <object folder="0" file="4" x="-30.315427" y="22.544877" angle="0"/>
+                </key>
+                <key id="1" time="100">
+                    <object folder="0" file="4" x="-12.231194" y="31.049516" angle="342.183335"/>
+                </key>
+                <key id="2" time="198" spin="-1">
+                    <object folder="0" file="4" x="-23.312366" y="45.51574" angle="350.866195"/>
+                </key>
+                <key id="3" time="299">
+                    <object folder="0" file="4" x="-25.313711" y="18.829239" angle="350.101853"/>
+                </key>
+                <key id="4" time="397">
+                    <object folder="0" file="4" x="-30.1076" y="53.424026" angle="352.127184"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>

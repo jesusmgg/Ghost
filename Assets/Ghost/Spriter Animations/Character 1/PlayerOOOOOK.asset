@@ -1,0 +1,6431 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fd4016cde4e2bc4ea2f88cf390d0ad5, type: 3}
+  m_Name: PlayerOOOOOK
+  m_EditorClassIdentifier: 
+  Spriter:
+    Folders:
+    - Id: 0
+      Name: 
+      Files:
+      - Id: 0
+        Name: BODY.png
+        Type: 0
+        PivotX: 0.5
+        PivotY: 0.5
+        Width: 290
+        Height: 494
+      - Id: 1
+        Name: Character1_0002_TAIL--copia.png
+        Type: 0
+        PivotX: 0.714286
+        PivotY: 0.179104
+        Width: 133
+        Height: 201
+      - Id: 2
+        Name: face-evil.png
+        Type: 0
+        PivotX: 0.5
+        PivotY: 0.5
+        Width: 170
+        Height: 143
+      - Id: 3
+        Name: face-neutral.png
+        Type: 0
+        PivotX: 0.5
+        PivotY: 0.5
+        Width: 170
+        Height: 129
+      - Id: 4
+        Name: Character1_0000_PAW-1-copia-2.png
+        Type: 0
+        PivotX: 0.326923
+        PivotY: 0.809524
+        Width: 52
+        Height: 105
+      - Id: 5
+        Name: Character1_0001_PAW-1-copia-2.png
+        Type: 0
+        PivotX: 0.434783
+        PivotY: 0.794393
+        Width: 46
+        Height: 107
+      - Id: 6
+        Name: Running.png
+        Type: 0
+        PivotX: 0
+        PivotY: 1
+        Width: 340
+        Height: 495
+    Entities:
+    - Id: 0
+      Name: cat
+      ObjectInfos:
+      - Id: 0
+        Name: bone_000
+        ObjectType: 1
+        Width: 466.674
+        Height: 10
+        PivotX: 0
+        PivotY: 0
+        Variables: []
+      - Id: 0
+        Name: bone_001
+        ObjectType: 1
+        Width: 106.266
+        Height: 10
+        PivotX: 0
+        PivotY: 0
+        Variables: []
+      - Id: 0
+        Name: bone_002
+        ObjectType: 1
+        Width: 104.009
+        Height: 10
+        PivotX: 0
+        PivotY: 0
+        Variables: []
+      - Id: 0
+        Name: bone_003
+        ObjectType: 1
+        Width: 212.205
+        Height: 10
+        PivotX: 0
+        PivotY: 0
+        Variables: []
+      CharacterMaps: []
+      Animations:
+      - Id: 0
+        Name: Idle
+        Length: 1000
+        Looping: 1
+        MainlineKeys:
+        - Id: 0
+          Name: 
+          Time: 0
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 6
+            KeyId: 0
+          - Id: 1
+            Name: 
+            ParentId: 0
+            TimelineId: 7
+            KeyId: 0
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 8
+            KeyId: 0
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 0
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 0
+            TimelineId: 0
+            KeyId: 0
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 3
+            TimelineId: 1
+            KeyId: 0
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 2
+            KeyId: 0
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 0
+            TimelineId: 3
+            KeyId: 0
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 1
+            TimelineId: 4
+            KeyId: 0
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 2
+            TimelineId: 5
+            KeyId: 0
+            ZIndex: 5
+        - Id: 1
+          Name: 
+          Time: 500
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 6
+            KeyId: 0
+          - Id: 1
+            Name: 
+            ParentId: 0
+            TimelineId: 7
+            KeyId: 1
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 8
+            KeyId: 1
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 1
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 0
+            TimelineId: 0
+            KeyId: 1
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 3
+            TimelineId: 1
+            KeyId: 1
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 2
+            KeyId: 0
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 0
+            TimelineId: 3
+            KeyId: 1
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 1
+            TimelineId: 4
+            KeyId: 0
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 2
+            TimelineId: 5
+            KeyId: 0
+            ZIndex: 5
+        Timelines:
+        - Id: 0
+          Name: BODY
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 229.07436
+              Y: 12.357893
+              Angle: 269.6726
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 500
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 216.1579
+              Y: 12.431702
+              Angle: 269.6726
+              ScaleX: 1
+              ScaleY: 0.937037
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 1
+          Name: Character1_0002_TAIL--copia
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 21.832645
+              Y: -0.525584
+              Angle: 247.46321
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 1
+              PivotX: 0.714286
+              PivotY: 0.179104
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 500
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 21.832645
+              Y: -0.525584
+              Angle: 247.46321
+              ScaleX: 1
+              ScaleY: 0.891036
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 1
+              PivotX: 0.714286
+              PivotY: 0.179104
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 2
+          Name: face-evil
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 359.9272
+              Y: -4.640685
+              Angle: 271.18802
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 0
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 2
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 3
+          Name: face-neutral
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 367.17072
+              Y: -5.447211
+              Angle: 271.07437
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 3
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 500
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 339.07968
+              Y: -2.572624
+              Angle: 271.07437
+              ScaleX: 1
+              ScaleY: 0.925799
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 3
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 4
+          Name: Character1_0000_PAW-1-copia-2
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 20.850187
+              Y: 0.236636
+              Angle: 72.474434
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 4
+              PivotX: 0.326923
+              PivotY: 0.809524
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 5
+          Name: Character1_0001_PAW-1-copia-2
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 28.537539
+              Y: -6.471613
+              Angle: 89.26548
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 5
+              PivotX: 0.434783
+              PivotY: 0.794393
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 6
+          Name: bone_000
+          ObjectType: 1
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 12
+              Y: -113.333336
+              Angle: 90.3274
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 7
+          Name: bone_001
+          ObjectType: 1
+          ObjectId: 1
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 234.87616
+              Y: 35.991795
+              Angle: 197.19817
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 500
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 234.87616
+              Y: 35.991795
+              Angle: 201.86656
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 8
+          Name: bone_002
+          ObjectType: 1
+          ObjectId: 2
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 248.91785
+              Y: -73.42356
+              Angle: 180.40712
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 500
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 248.9607
+              Y: -65.92368
+              Angle: 186.68694
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 9
+          Name: bone_003
+          ObjectType: 1
+          ObjectId: 3
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: -108
+              Y: -1.333333
+              Angle: 112.53679
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 500
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: -108
+              Y: -1.333333
+              Angle: 112.53679
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        Eventlines: []
+        Soundlines: []
+        Meta:
+          Varlines: []
+          Tagline:
+            Keys: []
+      - Id: 1
+        Name: Using
+        Length: 1000
+        Looping: 1
+        MainlineKeys:
+        - Id: 0
+          Name: 
+          Time: 0
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 6
+            KeyId: 0
+          - Id: 1
+            Name: 
+            ParentId: 0
+            TimelineId: 7
+            KeyId: 0
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 8
+            KeyId: 0
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 0
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 0
+            TimelineId: 0
+            KeyId: 0
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 3
+            TimelineId: 1
+            KeyId: 0
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 2
+            KeyId: 0
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 0
+            TimelineId: 3
+            KeyId: 0
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 1
+            TimelineId: 4
+            KeyId: 0
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 2
+            TimelineId: 5
+            KeyId: 0
+            ZIndex: 5
+        - Id: 1
+          Name: 
+          Time: 99
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 6
+            KeyId: 0
+          - Id: 1
+            Name: 
+            ParentId: 0
+            TimelineId: 7
+            KeyId: 1
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 8
+            KeyId: 1
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 0
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 0
+            TimelineId: 0
+            KeyId: 0
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 3
+            TimelineId: 1
+            KeyId: 0
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 2
+            KeyId: 0
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 0
+            TimelineId: 3
+            KeyId: 0
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 1
+            TimelineId: 4
+            KeyId: 0
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 2
+            TimelineId: 5
+            KeyId: 0
+            ZIndex: 5
+        - Id: 2
+          Name: 
+          Time: 200
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 6
+            KeyId: 0
+          - Id: 1
+            Name: 
+            ParentId: 0
+            TimelineId: 7
+            KeyId: 2
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 8
+            KeyId: 2
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 0
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 0
+            TimelineId: 0
+            KeyId: 0
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 3
+            TimelineId: 1
+            KeyId: 0
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 2
+            KeyId: 0
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 0
+            TimelineId: 3
+            KeyId: 0
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 1
+            TimelineId: 4
+            KeyId: 0
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 2
+            TimelineId: 5
+            KeyId: 0
+            ZIndex: 5
+        - Id: 3
+          Name: 
+          Time: 300
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 6
+            KeyId: 0
+          - Id: 1
+            Name: 
+            ParentId: 0
+            TimelineId: 7
+            KeyId: 3
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 8
+            KeyId: 3
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 0
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 0
+            TimelineId: 0
+            KeyId: 0
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 3
+            TimelineId: 1
+            KeyId: 0
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 2
+            KeyId: 0
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 0
+            TimelineId: 3
+            KeyId: 0
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 1
+            TimelineId: 4
+            KeyId: 0
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 2
+            TimelineId: 5
+            KeyId: 0
+            ZIndex: 5
+        - Id: 4
+          Name: 
+          Time: 400
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 6
+            KeyId: 1
+          - Id: 1
+            Name: 
+            ParentId: 0
+            TimelineId: 7
+            KeyId: 4
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 8
+            KeyId: 4
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 0
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 0
+            TimelineId: 0
+            KeyId: 0
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 3
+            TimelineId: 1
+            KeyId: 0
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 2
+            KeyId: 0
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 0
+            TimelineId: 3
+            KeyId: 0
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 1
+            TimelineId: 4
+            KeyId: 0
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 2
+            TimelineId: 5
+            KeyId: 0
+            ZIndex: 5
+        - Id: 5
+          Name: 
+          Time: 500
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 6
+            KeyId: 1
+          - Id: 1
+            Name: 
+            ParentId: 0
+            TimelineId: 7
+            KeyId: 5
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 8
+            KeyId: 5
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 0
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 0
+            TimelineId: 0
+            KeyId: 1
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 3
+            TimelineId: 1
+            KeyId: 1
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 2
+            KeyId: 1
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 0
+            TimelineId: 3
+            KeyId: 0
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 1
+            TimelineId: 4
+            KeyId: 0
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 2
+            TimelineId: 5
+            KeyId: 0
+            ZIndex: 5
+        - Id: 6
+          Name: 
+          Time: 600
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 6
+            KeyId: 1
+          - Id: 1
+            Name: 
+            ParentId: 0
+            TimelineId: 7
+            KeyId: 6
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 8
+            KeyId: 6
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 0
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 0
+            TimelineId: 0
+            KeyId: 1
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 3
+            TimelineId: 1
+            KeyId: 1
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 2
+            KeyId: 1
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 0
+            TimelineId: 3
+            KeyId: 0
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 1
+            TimelineId: 4
+            KeyId: 0
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 2
+            TimelineId: 5
+            KeyId: 0
+            ZIndex: 5
+        - Id: 7
+          Name: 
+          Time: 700
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 6
+            KeyId: 1
+          - Id: 1
+            Name: 
+            ParentId: 0
+            TimelineId: 7
+            KeyId: 7
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 8
+            KeyId: 7
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 0
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 0
+            TimelineId: 0
+            KeyId: 1
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 3
+            TimelineId: 1
+            KeyId: 1
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 2
+            KeyId: 1
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 0
+            TimelineId: 3
+            KeyId: 0
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 1
+            TimelineId: 4
+            KeyId: 0
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 2
+            TimelineId: 5
+            KeyId: 0
+            ZIndex: 5
+        - Id: 8
+          Name: 
+          Time: 800
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 6
+            KeyId: 1
+          - Id: 1
+            Name: 
+            ParentId: 0
+            TimelineId: 7
+            KeyId: 8
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 8
+            KeyId: 8
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 0
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 0
+            TimelineId: 0
+            KeyId: 1
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 3
+            TimelineId: 1
+            KeyId: 1
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 2
+            KeyId: 1
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 0
+            TimelineId: 3
+            KeyId: 0
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 1
+            TimelineId: 4
+            KeyId: 1
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 2
+            TimelineId: 5
+            KeyId: 0
+            ZIndex: 5
+        - Id: 9
+          Name: 
+          Time: 900
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 6
+            KeyId: 1
+          - Id: 1
+            Name: 
+            ParentId: 0
+            TimelineId: 7
+            KeyId: 9
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 8
+            KeyId: 9
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 0
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 0
+            TimelineId: 0
+            KeyId: 1
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 3
+            TimelineId: 1
+            KeyId: 1
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 2
+            KeyId: 1
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 0
+            TimelineId: 3
+            KeyId: 0
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 1
+            TimelineId: 4
+            KeyId: 1
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 2
+            TimelineId: 5
+            KeyId: 0
+            ZIndex: 5
+        - Id: 10
+          Name: 
+          Time: 1000
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 6
+            KeyId: 1
+          - Id: 1
+            Name: 
+            ParentId: 0
+            TimelineId: 7
+            KeyId: 10
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 8
+            KeyId: 10
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 0
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 0
+            TimelineId: 0
+            KeyId: 1
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 3
+            TimelineId: 1
+            KeyId: 1
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 2
+            KeyId: 1
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 0
+            TimelineId: 3
+            KeyId: 0
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 1
+            TimelineId: 4
+            KeyId: 1
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 2
+            TimelineId: 5
+            KeyId: 0
+            ZIndex: 5
+        Timelines:
+        - Id: 0
+          Name: BODY
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 229.07436
+              Y: 12.357893
+              Angle: 269.6726
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 500
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 229.07436
+              Y: 12.357893
+              Angle: 269.6726
+              ScaleX: 1
+              ScaleY: 0.941991
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 1
+          Name: Character1_0002_TAIL--copia
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 21.832645
+              Y: -0.525584
+              Angle: 247.46321
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 1
+              PivotX: 0.714286
+              PivotY: 0.179104
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 500
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 21.832645
+              Y: -0.525584
+              Angle: 247.46321
+              ScaleX: 1
+              ScaleY: 0.86327
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 1
+              PivotX: 0.714286
+              PivotY: 0.179104
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 2
+          Name: face-evil
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 359.9272
+              Y: -4.640685
+              Angle: 271.18802
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 2
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 500
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 349.21307
+              Y: -4.579462
+              Angle: 271.18802
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 2
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 3
+          Name: face-neutral
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 367.17072
+              Y: -5.447211
+              Angle: 271.07437
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 0
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 3
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 4
+          Name: Character1_0000_PAW-1-copia-2
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 20.850187
+              Y: 0.236636
+              Angle: 72.474434
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 4
+              PivotX: 0.326923
+              PivotY: 0.809524
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 800
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 20.540833
+              Y: -0.41288
+              Angle: 72.474434
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 4
+              PivotX: 0.326923
+              PivotY: 0.809524
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 5
+          Name: Character1_0001_PAW-1-copia-2
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 28.537539
+              Y: -6.471613
+              Angle: 89.26548
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 5
+              PivotX: 0.434783
+              PivotY: 0.794393
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 6
+          Name: bone_000
+          ObjectType: 1
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 12
+              Y: -113.333336
+              Angle: 90.3274
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 400
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 12
+              Y: -113.333336
+              Angle: 90.3274
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 7
+          Name: bone_001
+          ObjectType: 1
+          ObjectId: 1
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 234.87616
+              Y: 35.991795
+              Angle: 197.19817
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 99
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 234.87616
+              Y: 35.991795
+              Angle: 318.087
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 2
+            Name: 
+            Time: 200
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 234.87616
+              Y: 35.991795
+              Angle: 195.6703
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 3
+            Name: 
+            Time: 300
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 234.87616
+              Y: 35.991795
+              Angle: 319.38562
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 4
+            Name: 
+            Time: 400
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 234.87616
+              Y: 35.991795
+              Angle: 192.9134
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 5
+            Name: 
+            Time: 500
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 234.87616
+              Y: 35.991795
+              Angle: 339.31784
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 6
+            Name: 
+            Time: 600
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 234.87616
+              Y: 35.991795
+              Angle: 181.37262
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 7
+            Name: 
+            Time: 700
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 234.87616
+              Y: 35.991795
+              Angle: 338.8466
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 8
+            Name: 
+            Time: 800
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 231.34076
+              Y: 46.80354
+              Angle: 190.20178
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 9
+            Name: 
+            Time: 900
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 233.10846
+              Y: 41.397667
+              Angle: 337.7351
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 10
+            Name: 
+            Time: 1000
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 235.65314
+              Y: 46.05946
+              Angle: 197.19817
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 8
+          Name: bone_002
+          ObjectType: 1
+          ObjectId: 2
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 231.0723
+              Y: -48.86076
+              Angle: 314.36526
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 99
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 243.24065
+              Y: -59.721832
+              Angle: 201.01167
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 2
+            Name: 
+            Time: 200
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 241.8766
+              Y: -58.504333
+              Angle: 316.76825
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 3
+            Name: 
+            Time: 300
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 240.52606
+              Y: -57.298885
+              Angle: 207.93219
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 4
+            Name: 
+            Time: 400
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 239.17552
+              Y: -56.093437
+              Angle: 315.0959
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 5
+            Name: 
+            Time: 500
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 237.82498
+              Y: -54.887993
+              Angle: 202.68248
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 6
+            Name: 
+            Time: 600
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 236.47444
+              Y: -53.682545
+              Angle: 320.22052
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 7
+            Name: 
+            Time: 700
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 242.95934
+              Y: -66.19116
+              Angle: 201.28157
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 8
+            Name: 
+            Time: 800
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 238.997
+              Y: -60.41436
+              Angle: 318.07217
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 9
+            Name: 
+            Time: 900
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 237.82596
+              Y: -69.761665
+              Angle: 190.48122
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 10
+            Name: 
+            Time: 1000
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 246.1224
+              Y: -59.018864
+              Angle: 314.36526
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 9
+          Name: bone_003
+          ObjectType: 1
+          ObjectId: 3
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: -108
+              Y: -1.333333
+              Angle: 112.53679
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        Eventlines: []
+        Soundlines: []
+        Meta:
+          Varlines: []
+          Tagline:
+            Keys: []
+      - Id: 2
+        Name: JumpStart
+        Length: 200
+        Looping: 0
+        MainlineKeys:
+        - Id: 0
+          Name: 
+          Time: 0
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 6
+            KeyId: 0
+          - Id: 1
+            Name: 
+            ParentId: 0
+            TimelineId: 7
+            KeyId: 0
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 8
+            KeyId: 0
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 0
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 0
+            TimelineId: 0
+            KeyId: 0
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 3
+            TimelineId: 1
+            KeyId: 0
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 2
+            KeyId: 0
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 0
+            TimelineId: 3
+            KeyId: 0
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 1
+            TimelineId: 4
+            KeyId: 0
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 2
+            TimelineId: 5
+            KeyId: 0
+            ZIndex: 5
+        - Id: 1
+          Name: 
+          Time: 100
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 6
+            KeyId: 0
+          - Id: 1
+            Name: 
+            ParentId: 0
+            TimelineId: 7
+            KeyId: 1
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 8
+            KeyId: 1
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 0
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 0
+            TimelineId: 0
+            KeyId: 1
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 3
+            TimelineId: 1
+            KeyId: 1
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 2
+            KeyId: 0
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 0
+            TimelineId: 3
+            KeyId: 1
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 1
+            TimelineId: 4
+            KeyId: 0
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 2
+            TimelineId: 5
+            KeyId: 1
+            ZIndex: 5
+        - Id: 2
+          Name: 
+          Time: 160
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 6
+            KeyId: 0
+          - Id: 1
+            Name: 
+            ParentId: 0
+            TimelineId: 7
+            KeyId: 1
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 8
+            KeyId: 1
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 0
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 0
+            TimelineId: 0
+            KeyId: 1
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 3
+            TimelineId: 1
+            KeyId: 2
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 2
+            KeyId: 0
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 0
+            TimelineId: 3
+            KeyId: 1
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 1
+            TimelineId: 4
+            KeyId: 0
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 2
+            TimelineId: 5
+            KeyId: 1
+            ZIndex: 5
+        Timelines:
+        - Id: 0
+          Name: BODY
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 229.07436
+              Y: 12.357893
+              Angle: 269.6726
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 100
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 229.07436
+              Y: 12.357893
+              Angle: 269.6726
+              ScaleX: 1
+              ScaleY: 0.738659
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 1
+          Name: Character1_0002_TAIL--copia
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 21.832645
+              Y: -0.525584
+              Angle: 247.46321
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 1
+              PivotX: 0.714286
+              PivotY: 0.179104
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 100
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 42.344223
+              Y: -8.495851
+              Angle: 247.46321
+              ScaleX: 1
+              ScaleY: 0.752063
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 1
+              PivotX: 0.714286
+              PivotY: 0.179104
+              T: 0
+          - Id: 2
+            Name: 
+            Time: 160
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 38.292114
+              Y: -8.694141
+              Angle: 247.46321
+              ScaleX: 0.960008
+              ScaleY: 0.793386
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 1
+              PivotX: 0.714286
+              PivotY: 0.179104
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 2
+          Name: face-evil
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 359.9272
+              Y: -4.640685
+              Angle: 271.18802
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 0
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 2
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 3
+          Name: face-neutral
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 367.17072
+              Y: -5.447211
+              Angle: 271.07437
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 3
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 100
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 324.67712
+              Y: -4.204374
+              Angle: 275.59943
+              ScaleX: 1
+              ScaleY: 0.795822
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 3
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 4
+          Name: Character1_0000_PAW-1-copia-2
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 20.850187
+              Y: 0.236636
+              Angle: 72.474434
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 4
+              PivotX: 0.326923
+              PivotY: 0.809524
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 5
+          Name: Character1_0001_PAW-1-copia-2
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 28.537539
+              Y: -6.471613
+              Angle: 89.26548
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 5
+              PivotX: 0.434783
+              PivotY: 0.794393
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 100
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 27.942833
+              Y: -11.436119
+              Angle: 89.26548
+              ScaleX: 1
+              ScaleY: 0.919877
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 5
+              PivotX: 0.434783
+              PivotY: 0.794393
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 6
+          Name: bone_000
+          ObjectType: 1
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 12
+              Y: -113.333336
+              Angle: 90.3274
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 7
+          Name: bone_001
+          ObjectType: 1
+          ObjectId: 1
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 234.87616
+              Y: 35.991795
+              Angle: 197.19817
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 100
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 247.91595
+              Y: 42.917397
+              Angle: 188.22296
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 8
+          Name: bone_002
+          ObjectType: 1
+          ObjectId: 2
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 248.91785
+              Y: -73.42356
+              Angle: 180.40712
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 100
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 256.92056
+              Y: -72.969284
+              Angle: 186.5036
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 9
+          Name: bone_003
+          ObjectType: 1
+          ObjectId: 3
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: -108
+              Y: -1.333333
+              Angle: 112.53679
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        Eventlines: []
+        Soundlines: []
+        Meta:
+          Varlines: []
+          Tagline:
+            Keys: []
+      - Id: 3
+        Name: JumpMid
+        Length: 400
+        Looping: 0
+        MainlineKeys:
+        - Id: 0
+          Name: 
+          Time: 0
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 6
+            KeyId: 0
+          - Id: 1
+            Name: 
+            ParentId: 0
+            TimelineId: 7
+            KeyId: 0
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 8
+            KeyId: 0
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 0
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 0
+            TimelineId: 0
+            KeyId: 0
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 3
+            TimelineId: 1
+            KeyId: 0
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 2
+            KeyId: 0
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 0
+            TimelineId: 3
+            KeyId: 0
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 1
+            TimelineId: 4
+            KeyId: 0
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 2
+            TimelineId: 5
+            KeyId: 0
+            ZIndex: 5
+        - Id: 1
+          Name: 
+          Time: 100
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 6
+            KeyId: 0
+          - Id: 1
+            Name: 
+            ParentId: 0
+            TimelineId: 7
+            KeyId: 1
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 8
+            KeyId: 1
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 0
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 0
+            TimelineId: 0
+            KeyId: 1
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 3
+            TimelineId: 1
+            KeyId: 1
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 2
+            KeyId: 0
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 0
+            TimelineId: 3
+            KeyId: 1
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 1
+            TimelineId: 4
+            KeyId: 0
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 2
+            TimelineId: 5
+            KeyId: 0
+            ZIndex: 5
+        - Id: 2
+          Name: 
+          Time: 150
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 6
+            KeyId: 0
+          - Id: 1
+            Name: 
+            ParentId: 0
+            TimelineId: 7
+            KeyId: 2
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 8
+            KeyId: 2
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 0
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 0
+            TimelineId: 0
+            KeyId: 1
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 3
+            TimelineId: 1
+            KeyId: 2
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 2
+            KeyId: 0
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 0
+            TimelineId: 3
+            KeyId: 1
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 1
+            TimelineId: 4
+            KeyId: 0
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 2
+            TimelineId: 5
+            KeyId: 0
+            ZIndex: 5
+        Timelines:
+        - Id: 0
+          Name: BODY
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 229.07436
+              Y: 12.357893
+              Angle: 269.6726
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 100
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 229.07436
+              Y: 12.357893
+              Angle: 269.6726
+              ScaleX: 1
+              ScaleY: 1.159891
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 1
+          Name: Character1_0002_TAIL--copia
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 21.832645
+              Y: -0.525584
+              Angle: 247.46321
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 1
+              PivotX: 0.714286
+              PivotY: 0.179104
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 100
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 16.393171
+              Y: -0.588416
+              Angle: 247.46321
+              ScaleX: 1
+              ScaleY: 1.123664
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 1
+              PivotX: 0.714286
+              PivotY: 0.179104
+              T: 0
+          - Id: 2
+            Name: 
+            Time: 150
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 17.29975
+              Y: -0.577944
+              Angle: 247.46321
+              ScaleX: 1
+              ScaleY: 1.174836
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 1
+              PivotX: 0.714286
+              PivotY: 0.179104
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 2
+          Name: face-evil
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 359.9272
+              Y: -4.640685
+              Angle: 271.18802
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 0
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 2
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 3
+          Name: face-neutral
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 367.17072
+              Y: -5.447211
+              Angle: 271.07437
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 3
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 100
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 401.84714
+              Y: -4.03404
+              Angle: 271.07437
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 3
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 4
+          Name: Character1_0000_PAW-1-copia-2
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 20.850187
+              Y: 0.236636
+              Angle: 72.474434
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 4
+              PivotX: 0.326923
+              PivotY: 0.809524
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 5
+          Name: Character1_0001_PAW-1-copia-2
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 28.537539
+              Y: -6.471613
+              Angle: 89.26548
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 5
+              PivotX: 0.434783
+              PivotY: 0.794393
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 6
+          Name: bone_000
+          ObjectType: 1
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 12
+              Y: -113.333336
+              Angle: 90.3274
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 7
+          Name: bone_001
+          ObjectType: 1
+          ObjectId: 1
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 234.87616
+              Y: 35.991795
+              Angle: 197.19817
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 100
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 234.87616
+              Y: 35.991795
+              Angle: 174.1572
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 2
+            Name: 
+            Time: 150
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 234.87616
+              Y: 35.991795
+              Angle: 192.39601
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 8
+          Name: bone_002
+          ObjectType: 1
+          ObjectId: 2
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 248.91785
+              Y: -73.42356
+              Angle: 180.40712
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 100
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 248.91785
+              Y: -73.42356
+              Angle: 158.21967
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 2
+            Name: 
+            Time: 150
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 248.91785
+              Y: -73.42356
+              Angle: 171.76852
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 9
+          Name: bone_003
+          ObjectType: 1
+          ObjectId: 3
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: -108
+              Y: -1.333333
+              Angle: 112.53679
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        Eventlines: []
+        Soundlines: []
+        Meta:
+          Varlines: []
+          Tagline:
+            Keys: []
+      - Id: 4
+        Name: JumpFall
+        Length: 400
+        Looping: 0
+        MainlineKeys:
+        - Id: 0
+          Name: 
+          Time: 0
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 6
+            KeyId: 0
+          - Id: 1
+            Name: 
+            ParentId: 0
+            TimelineId: 7
+            KeyId: 0
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 8
+            KeyId: 0
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 0
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 0
+            TimelineId: 0
+            KeyId: 0
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 3
+            TimelineId: 1
+            KeyId: 0
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 2
+            KeyId: 0
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 0
+            TimelineId: 3
+            KeyId: 0
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 1
+            TimelineId: 4
+            KeyId: 0
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 2
+            TimelineId: 5
+            KeyId: 0
+            ZIndex: 5
+        - Id: 1
+          Name: 
+          Time: 100
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 6
+            KeyId: 0
+          - Id: 1
+            Name: 
+            ParentId: 0
+            TimelineId: 7
+            KeyId: 1
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 8
+            KeyId: 1
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 0
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 0
+            TimelineId: 0
+            KeyId: 0
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 3
+            TimelineId: 1
+            KeyId: 0
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 2
+            KeyId: 0
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 0
+            TimelineId: 3
+            KeyId: 0
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 1
+            TimelineId: 4
+            KeyId: 0
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 2
+            TimelineId: 5
+            KeyId: 0
+            ZIndex: 5
+        - Id: 2
+          Name: 
+          Time: 200
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 6
+            KeyId: 0
+          - Id: 1
+            Name: 
+            ParentId: 0
+            TimelineId: 7
+            KeyId: 2
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 8
+            KeyId: 2
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 0
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 0
+            TimelineId: 0
+            KeyId: 1
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 3
+            TimelineId: 1
+            KeyId: 1
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 2
+            KeyId: 0
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 0
+            TimelineId: 3
+            KeyId: 1
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 1
+            TimelineId: 4
+            KeyId: 0
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 2
+            TimelineId: 5
+            KeyId: 0
+            ZIndex: 5
+        - Id: 3
+          Name: 
+          Time: 399
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 6
+            KeyId: 0
+          - Id: 1
+            Name: 
+            ParentId: 0
+            TimelineId: 7
+            KeyId: 3
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 8
+            KeyId: 3
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 0
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 0
+            TimelineId: 0
+            KeyId: 2
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 3
+            TimelineId: 1
+            KeyId: 2
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 2
+            KeyId: 0
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 0
+            TimelineId: 3
+            KeyId: 2
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 1
+            TimelineId: 4
+            KeyId: 0
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 2
+            TimelineId: 5
+            KeyId: 0
+            ZIndex: 5
+        Timelines:
+        - Id: 0
+          Name: BODY
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 229.07436
+              Y: 12.357893
+              Angle: 269.6726
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 200
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 229.07436
+              Y: 12.357893
+              Angle: 273.73166
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 2
+            Name: 
+            Time: 399
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 229.07436
+              Y: 12.357893
+              Angle: 270.68735
+              ScaleX: 1
+              ScaleY: 0.860957
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 1
+          Name: Character1_0002_TAIL--copia
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 21.832645
+              Y: -0.525584
+              Angle: 247.46321
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 1
+              PivotX: 0.714286
+              PivotY: 0.179104
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 200
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 9.904241
+              Y: -5.063107
+              Angle: 252.40582
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 1
+              PivotX: 0.714286
+              PivotY: 0.179104
+              T: 0
+          - Id: 2
+            Name: 
+            Time: 399
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 28.817814
+              Y: -5.796043
+              Angle: 248.69887
+              ScaleX: 1
+              ScaleY: 0.824124
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 1
+              PivotX: 0.714286
+              PivotY: 0.179104
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 2
+          Name: face-evil
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 359.9272
+              Y: -4.640685
+              Angle: 271.18802
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 0
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 2
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 3
+          Name: face-neutral
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 367.17072
+              Y: -5.447211
+              Angle: 271.07437
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 3
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 200
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 366.04782
+              Y: 1.536064
+              Angle: 277.28995
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 3
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 2
+            Name: 
+            Time: 399
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 345.3806
+              Y: -4.789533
+              Angle: 272.1197
+              ScaleX: 0.919514
+              ScaleY: 0.92957
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 3
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 4
+          Name: Character1_0000_PAW-1-copia-2
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 20.850187
+              Y: 0.236636
+              Angle: 72.474434
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 4
+              PivotX: 0.326923
+              PivotY: 0.809524
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 5
+          Name: Character1_0001_PAW-1-copia-2
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 28.537539
+              Y: -6.471613
+              Angle: 89.26548
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 5
+              PivotX: 0.434783
+              PivotY: 0.794393
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 6
+          Name: bone_000
+          ObjectType: 1
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 12
+              Y: -113.333336
+              Angle: 90.3274
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 7
+          Name: bone_001
+          ObjectType: 1
+          ObjectId: 1
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 234.87616
+              Y: 35.991795
+              Angle: 197.19817
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 100
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 234.87616
+              Y: 35.991795
+              Angle: 183.15729
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 2
+            Name: 
+            Time: 200
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 234.87616
+              Y: 35.991795
+              Angle: 209.51704
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 3
+            Name: 
+            Time: 399
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 234.87616
+              Y: 35.991795
+              Angle: 220.05708
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 8
+          Name: bone_002
+          ObjectType: 1
+          ObjectId: 2
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 248.91785
+              Y: -73.42356
+              Angle: 180.40712
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 100
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 248.91785
+              Y: -73.42356
+              Angle: 173.87776
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 2
+            Name: 
+            Time: 200
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 248.91785
+              Y: -73.42356
+              Angle: 198.20079
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 3
+            Name: 
+            Time: 399
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 251.15007
+              Y: -60.486465
+              Angle: 227.778
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 9
+          Name: bone_003
+          ObjectType: 1
+          ObjectId: 3
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: -108
+              Y: -1.333333
+              Angle: 112.53679
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        Eventlines: []
+        Soundlines: []
+        Meta:
+          Varlines: []
+          Tagline:
+            Keys: []
+      - Id: 5
+        Name: JumpLand
+        Length: 400
+        Looping: 0
+        MainlineKeys:
+        - Id: 0
+          Name: 
+          Time: 0
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 6
+            KeyId: 0
+          - Id: 1
+            Name: 
+            ParentId: 0
+            TimelineId: 7
+            KeyId: 0
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 8
+            KeyId: 0
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 0
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 0
+            TimelineId: 0
+            KeyId: 0
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 3
+            TimelineId: 1
+            KeyId: 0
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 2
+            KeyId: 0
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 0
+            TimelineId: 3
+            KeyId: 0
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 1
+            TimelineId: 4
+            KeyId: 0
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 2
+            TimelineId: 5
+            KeyId: 0
+            ZIndex: 5
+        - Id: 1
+          Name: 
+          Time: 100
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 6
+            KeyId: 0
+          - Id: 1
+            Name: 
+            ParentId: 0
+            TimelineId: 7
+            KeyId: 1
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 8
+            KeyId: 1
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 0
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 0
+            TimelineId: 0
+            KeyId: 0
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 3
+            TimelineId: 1
+            KeyId: 0
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 2
+            KeyId: 0
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 0
+            TimelineId: 3
+            KeyId: 0
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 1
+            TimelineId: 4
+            KeyId: 0
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 2
+            TimelineId: 5
+            KeyId: 0
+            ZIndex: 5
+        - Id: 2
+          Name: 
+          Time: 200
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 6
+            KeyId: 0
+          - Id: 1
+            Name: 
+            ParentId: 0
+            TimelineId: 7
+            KeyId: 2
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 8
+            KeyId: 2
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 0
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 0
+            TimelineId: 0
+            KeyId: 1
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 3
+            TimelineId: 1
+            KeyId: 1
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 2
+            KeyId: 0
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 0
+            TimelineId: 3
+            KeyId: 1
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 1
+            TimelineId: 4
+            KeyId: 0
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 2
+            TimelineId: 5
+            KeyId: 0
+            ZIndex: 5
+        - Id: 3
+          Name: 
+          Time: 400
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 6
+            KeyId: 0
+          - Id: 1
+            Name: 
+            ParentId: 0
+            TimelineId: 7
+            KeyId: 3
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 8
+            KeyId: 3
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 9
+            KeyId: 0
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: 0
+            TimelineId: 0
+            KeyId: 2
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: 3
+            TimelineId: 1
+            KeyId: 2
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: 0
+            TimelineId: 2
+            KeyId: 0
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: 0
+            TimelineId: 3
+            KeyId: 2
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: 1
+            TimelineId: 4
+            KeyId: 0
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: 2
+            TimelineId: 5
+            KeyId: 0
+            ZIndex: 5
+        Timelines:
+        - Id: 0
+          Name: BODY
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 229.07436
+              Y: 12.357893
+              Angle: 269.6726
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 200
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 229.07436
+              Y: 12.357893
+              Angle: 273.73166
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 2
+            Name: 
+            Time: 400
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 229.07436
+              Y: 12.357893
+              Angle: 270.68735
+              ScaleX: 1
+              ScaleY: 0.860957
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 1
+          Name: Character1_0002_TAIL--copia
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 21.832645
+              Y: -0.525584
+              Angle: 247.46321
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 1
+              PivotX: 0.714286
+              PivotY: 0.179104
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 200
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 9.904241
+              Y: -5.063107
+              Angle: 252.40582
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 1
+              PivotX: 0.714286
+              PivotY: 0.179104
+              T: 0
+          - Id: 2
+            Name: 
+            Time: 400
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 28.817814
+              Y: -5.796043
+              Angle: 248.69887
+              ScaleX: 1
+              ScaleY: 0.824124
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 1
+              PivotX: 0.714286
+              PivotY: 0.179104
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 2
+          Name: face-evil
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 359.9272
+              Y: -4.640685
+              Angle: 271.18802
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 0
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 2
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 3
+          Name: face-neutral
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 367.17072
+              Y: -5.447211
+              Angle: 271.07437
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 3
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 200
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 366.04782
+              Y: 1.536064
+              Angle: 277.28995
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 3
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 2
+            Name: 
+            Time: 400
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 345.3806
+              Y: -4.789533
+              Angle: 272.1197
+              ScaleX: 0.919514
+              ScaleY: 0.92957
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 3
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 4
+          Name: Character1_0000_PAW-1-copia-2
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 20.850187
+              Y: 0.236636
+              Angle: 72.474434
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 4
+              PivotX: 0.326923
+              PivotY: 0.809524
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 5
+          Name: Character1_0001_PAW-1-copia-2
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 28.537539
+              Y: -6.471613
+              Angle: 89.26548
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 5
+              PivotX: 0.434783
+              PivotY: 0.794393
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 6
+          Name: bone_000
+          ObjectType: 1
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 12
+              Y: -113.333336
+              Angle: 90.3274
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 7
+          Name: bone_001
+          ObjectType: 1
+          ObjectId: 1
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 234.87616
+              Y: 35.991795
+              Angle: 197.19817
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 100
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 234.87616
+              Y: 35.991795
+              Angle: 183.15729
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 2
+            Name: 
+            Time: 200
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 234.87616
+              Y: 35.991795
+              Angle: 209.51704
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 3
+            Name: 
+            Time: 400
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 234.87616
+              Y: 35.991795
+              Angle: 220.05708
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 8
+          Name: bone_002
+          ObjectType: 1
+          ObjectId: 2
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 248.91785
+              Y: -73.42356
+              Angle: 180.40712
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 1
+            Name: 
+            Time: 100
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 248.91785
+              Y: -73.42356
+              Angle: 173.87776
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 2
+            Name: 
+            Time: 200
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 1
+            BoneInfo:
+              X: 248.91785
+              Y: -73.42356
+              Angle: 198.20079
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          - Id: 3
+            Name: 
+            Time: 400
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: -1
+            BoneInfo:
+              X: 251.15007
+              Y: -60.486465
+              Angle: 227.778
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 9
+          Name: bone_003
+          ObjectType: 1
+          ObjectId: 3
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: -108
+              Y: -1.333333
+              Angle: 112.53679
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: 0.5
+              PivotY: 0.5
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        Eventlines: []
+        Soundlines: []
+        Meta:
+          Varlines: []
+          Tagline:
+            Keys: []
+      Variables: []
+    Tags: []
+  FileEntries:
+  - FolderId: 0
+    FileId: 0
+    Sprite: {fileID: 21300000, guid: e74763e45e42ff94f9e6c4c71a7608cb, type: 3}
+    Sound: {fileID: 0}
+  - FolderId: 0
+    FileId: 1
+    Sprite: {fileID: 21300000, guid: 012f8a5bf7902ae45a1dfc41dc897d64, type: 3}
+    Sound: {fileID: 0}
+  - FolderId: 0
+    FileId: 2
+    Sprite: {fileID: 21300000, guid: 64a30397693f0ea43a94e8e10afa30b0, type: 3}
+    Sound: {fileID: 0}
+  - FolderId: 0
+    FileId: 3
+    Sprite: {fileID: 21300000, guid: b2767e7f64cb9634b9a9763d2468c417, type: 3}
+    Sound: {fileID: 0}
+  - FolderId: 0
+    FileId: 4
+    Sprite: {fileID: 21300000, guid: 604373c89ef50df4c90606dd90fff0e6, type: 3}
+    Sound: {fileID: 0}
+  - FolderId: 0
+    FileId: 5
+    Sprite: {fileID: 21300000, guid: 47193f5a3d53ea34f88b1e006a0c05f6, type: 3}
+    Sound: {fileID: 0}
+  - FolderId: 0
+    FileId: 6
+    Sprite: {fileID: 21300000, guid: be827d8a4a09534438ff6b78785607bc, type: 3}
+    Sound: {fileID: 0}

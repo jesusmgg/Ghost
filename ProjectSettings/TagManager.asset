@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Lift
+  - Interactable
+  - TestTag1
+  - TestTag2
+  - TestTag3
+  - Projectile
+  - Enemy
   layers:
   - Default
   - TransparentFX
