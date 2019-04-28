@@ -25,7 +25,7 @@ namespace Ghost.Mechanics.Player
 
         void Update()
         {
-            if (playerInput.GetButtonDown("Fire1"))
+            if (playerInput.GetButtonDown("Fire1") && Mathf.Abs(playerInput.Direction.y) < Mathf.Epsilon)
             {
                 if (currentMarker == null)
                 {

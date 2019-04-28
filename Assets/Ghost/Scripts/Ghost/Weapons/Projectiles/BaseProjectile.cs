@@ -22,7 +22,7 @@ namespace Ghost.Weapons.Projectiles
 
         protected virtual void Update()
         {
-            transform.Translate(initialVelocity * Time.deltaTime);
+            transform.position += (Vector3) (initialVelocity * Time.deltaTime);
         }
 
         protected virtual void OnTriggerEnter2D(Collider2D other)

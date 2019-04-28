@@ -11,9 +11,12 @@ namespace Ghost.Props.Interactable
         public bool isContinuous;
         public bool isBeingInteracted;
 
-        void Start()
+        public float currentInteractionTime;
+
+        protected virtual void Start()
         {
             isBeingInteracted = false;
+            currentInteractionTime = 0;
         }
 
         protected virtual void Update()
@@ -21,6 +24,11 @@ namespace Ghost.Props.Interactable
             if (isBeingInteracted)
             {
                 Interact();
+                currentInteractionTime += Time.deltaTime;
+            }
+            else
+            {
+                currentInteractionTime = 0;
             }
         }
 

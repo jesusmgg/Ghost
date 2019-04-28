@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6822604161700843398}
   - component: {fileID: 6822604161700843420}
+  - component: {fileID: 4988070930493874865}
   - component: {fileID: 6822604161700843423}
   - component: {fileID: 6822604161700843422}
-  - component: {fileID: 6822604161700843421}
+  - component: {fileID: 8643925844206083074}
   - component: {fileID: 6822604161700843418}
   - component: {fileID: 6822604161700843419}
   - component: {fileID: 6822604161700843416}
@@ -66,6 +67,20 @@ MonoBehaviour:
   maxRandomSpeed: 7
   isJumping: 0
   jumpLift: {fileID: 0}
+--- !u!114 &4988070930493874865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6822604161700843399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa4e71c8f405423e880ce843ba70eb09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tombs: []
+  hasAllTombsDead: 0
 --- !u!114 &6822604161700843423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,6 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectionRange: 12
+  raycastOffset: {x: 0, y: 0}
   layerMask:
     serializedVersion: 2
     m_Bits: 768
@@ -102,7 +118,7 @@ MonoBehaviour:
   stopDistance: 8
   hasRangedAttack: 1
   isAttacking: 0
---- !u!114 &6822604161700843421
+--- !u!114 &8643925844206083074
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -111,7 +127,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6822604161700843399}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bae4fb5566947279d3d740dca848b61, type: 3}
+  m_Script: {fileID: 11500000, guid: 31b7adbbd2b842a2a05a18d7b89dbe18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &6822604161700843418

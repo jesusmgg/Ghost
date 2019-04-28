@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Ghost.Animation
 {
-    public class BipedAnimationController : BaseAnimationController
+    public class ShootingDogAnimationController : BaseAnimationController
     {
         BaseInput input;
         BipedPhysicsObject physicsObject;

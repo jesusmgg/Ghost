@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6822604161700843398}
   - component: {fileID: 6822604161700843420}
   - component: {fileID: 6822604161700843423}
+  - component: {fileID: 5099409132720257102}
   - component: {fileID: 6822604161700843422}
   - component: {fileID: 6763228204021795542}
   - component: {fileID: 6822604161700843418}
@@ -78,6 +79,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useInput: 1
+--- !u!114 &5099409132720257102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6822604161700843399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa4e71c8f405423e880ce843ba70eb09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tombs: []
+  hasAllTombsDead: 0
 --- !u!114 &6822604161700843422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,7 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectionRange: 12
-  raycastOffset: {x: 0, y: -0.85}
+  raycastOffset: {x: 0, y: 0}
   layerMask:
     serializedVersion: 2
     m_Bits: 768
@@ -192,7 +207,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.3279018, y: 2.9217768}
+  m_Size: {x: 1.663951, y: 1.4608885}
   m_EdgeRadius: 0
 --- !u!61 &6822604161700843409
 BoxCollider2D:
@@ -218,7 +233,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.3279018, y: 2.9217768}
+  m_Size: {x: 1.663951, y: 1.460889}
   m_EdgeRadius: 0
 --- !u!1001 &7854481591557103908
 PrefabInstance:
@@ -286,6 +301,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939126990204233362, guid: a66e0c073e32237499359334a225f36a,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939126990204233362, guid: a66e0c073e32237499359334a225f36a,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939126990204233362, guid: a66e0c073e32237499359334a225f36a,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3728697344220475527, guid: a66e0c073e32237499359334a225f36a,
         type: 3}

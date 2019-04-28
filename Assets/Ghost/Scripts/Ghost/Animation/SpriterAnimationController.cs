@@ -19,6 +19,14 @@ namespace Ghost.Animation
             spriterAnimator = GetComponentInChildren<SpriterDotNetBehaviour>().Animator;
 
             currentSpriterState = spriterState;
+            
+            try
+            {
+                spriterAnimator.Transition(Enum.GetName(spriterState.GetType(), spriterState), transitionTime);
+            }
+            catch (KeyNotFoundException)
+            {
+            }
         }
 
         void Update()

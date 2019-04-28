@@ -1,4 +1,5 @@
 using System.Collections;
+using Ghost.Mechanics.Player;
 using UnityEngine;
 
 namespace Ghost.AI
@@ -12,6 +13,7 @@ namespace Ghost.AI
         public bool hasDetectedPlayer;
 
         [Header("Movement")]
+        public bool isStatic;
         public float wanderingTime = 4.0f;
         public float waitTime = 2.0f;
         public Vector2 direction;
@@ -20,9 +22,13 @@ namespace Ghost.AI
         public float stopDistance;
         public bool hasRangedAttack;
         public bool isAttacking;
+
+        Invisibility playerInvisibility;
         
         void Start()
         {
+            playerInvisibility = FindObjectOfType<Invisibility>();
+            
             direction = Vector2.zero;
             hasDetectedPlayer = false;
 
@@ -37,12 +43,12 @@ namespace Ghost.AI
             RaycastHit2D hit = Physics2D.Raycast(raycastOrigin, rayDir, detectionRange, layerMask);
             Debug.DrawRay(raycastOrigin, rayDir * detectionRange);
 
-            if (hit.collider != null)
+            if (!playerInvisibility.isInvisible && hit.collider != null)
             {
                 if (hit.collider.CompareTag("Player"))
                 {
                     hasDetectedPlayer = true;
-                    if (hit.distance > stopDistance)
+                    if (!isStatic && hit.distance > stopDistance)
                     {
                         direction = rayDir;
                         isAttacking = false;
@@ -68,6 +74,11 @@ namespace Ghost.AI
                 hasDetectedPlayer = false;
                 isAttacking = false;
             }
+
+            if (isStatic)
+            {
+                direction = Vector2.zero;
+            }
         }
 
         IEnumerator Wander()
@@ -75,7 +86,7 @@ namespace Ghost.AI
             while (true)
             {
                 yield return new WaitForSeconds(waitTime);
-                if (!hasDetectedPlayer)
+                if (!hasDetectedPlayer && !isStatic)
                 {
                     direction = new Vector2(-Mathf.Sign(transform.localScale.x), 0);
                     yield return new WaitForSeconds(wanderingTime);
