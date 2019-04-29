@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="r11">
+    <folder id="0">
+        <file id="0" name="Save_0003_atril.png" width="179" height="258" pivot_x="0.5" pivot_y="0.5"/>
+        <file id="1" name="Save_0002_libro.png" width="130" height="109" pivot_x="0.5" pivot_y="0.5"/>
+        <file id="2" name="Save_0001_glow.png" width="141" height="125" pivot_x="0.5" pivot_y="0.5"/>
+        <file id="3" name="Save_0000_open-book.png" width="159" height="94" pivot_x="0.5" pivot_y="0.5"/>
+    </folder>
+    <entity id="0" name="Save">
+        <obj_info name="bone_000" type="bone" w="261.982" h="10"/>
+        <animation id="0" name="Idle" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <bone_ref id="0" timeline="4" key="0"/>
+                    <object_ref id="0" parent="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="0" z_index="3"/>
+                </key>
+                <key id="1" time="498">
+                    <bone_ref id="0" timeline="4" key="0"/>
+                    <object_ref id="0" parent="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="1" z_index="3"/>
+                </key>
+                <key id="2" time="499">
+                    <bone_ref id="0" timeline="4" key="0"/>
+                    <object_ref id="0" parent="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="1" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="1" z_index="3"/>
+                </key>
+                <key id="3" time="1000">
+                    <bone_ref id="0" timeline="4" key="0"/>
+                    <object_ref id="0" parent="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="1" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="2" z_index="3"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="Save_0003_atril">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="121.336831" y="2.056352" angle="270.434709"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="Save_0002_libro">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="0.900901" y="119.81982" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="2" name="Save_0000_open-book">
+                <key id="0" spin="0">
+                    <object folder="0" file="3" x="4.365079" y="114.285714"/>
+                </key>
+                <key id="1" time="499" spin="0">
+                    <object folder="0" file="3" x="3.589886" y="119.712071"/>
+                </key>
+            </timeline>
+            <timeline id="3" name="Save_0001_glow">
+                <key id="0">
+                    <object folder="0" file="2" x="1.190476" y="118.650794"/>
+                </key>
+                <key id="1" time="498">
+                    <object folder="0" file="2" x="1.190476" y="118.650794" angle="89.309529" scale_x="0.753766" scale_y="1"/>
+                </key>
+                <key id="2" time="1000" spin="-1">
+                    <object folder="0" file="2" x="1.190476" y="118.650794" angle="179.336403" scale_y="1"/>
+                </key>
+            </timeline>
+            <timeline id="4" obj="0" name="bone_000" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="2.347418" y="-119.71831" angle="89.565291"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="1" name="Using" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <bone_ref id="0" timeline="4" key="0"/>
+                    <object_ref id="0" parent="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="0" z_index="3"/>
+                </key>
+                <key id="1" time="500">
+                    <bone_ref id="0" timeline="4" key="0"/>
+                    <object_ref id="0" parent="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="1" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="1" z_index="3"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="Save_0003_atril">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="121.336831" y="2.056352" angle="270.434709"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="Save_0002_libro">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="0.900901" y="119.81982"/>
+                </key>
+                <key id="1" time="500" spin="0">
+                    <object folder="0" file="1" x="0.900901" y="126.02137"/>
+                </key>
+            </timeline>
+            <timeline id="2" name="Save_0000_open-book">
+                <key id="0" spin="0">
+                    <object folder="0" file="3" x="4.365079" y="114.285714" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="3" name="Save_0001_glow">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="1.190476" y="118.650794"/>
+                </key>
+                <key id="1" time="500" spin="0">
+                    <object folder="0" file="2" x="0.415282" y="120.976375"/>
+                </key>
+            </timeline>
+            <timeline id="4" obj="0" name="bone_000" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="2.347418" y="-119.71831" angle="89.565291"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>

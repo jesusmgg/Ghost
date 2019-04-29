@@ -19,7 +19,7 @@ namespace Ghost.Input
         {
             if (isPlayerStatsNotNull)
             {
-                useInput = !playerStats.dead;
+                useInput = !playerStats.isDead;
             }
             
             if (!useInput)

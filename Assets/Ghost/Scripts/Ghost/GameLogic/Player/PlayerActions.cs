@@ -2,6 +2,7 @@ using System.Linq;
 using Ghost.Input;
 using Ghost.Props;
 using Ghost.Props.Interactable;
+using Ghost.Stats;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -17,25 +18,27 @@ namespace Ghost.GameLogic.Player
         
         [Header("Object detection")]
         public BaseInteractableObject currentInteractableObject;
+
+        [Header("Checkpoints")]
+        public Checkpoint currentCheckpoint;
         
         PlayerInput input;
+        PlayerStats stats;
 
         void Start()
         {
             input = GetComponent<PlayerInput>();
+            stats = GetComponent<PlayerStats>();
             
             SceneManager.sceneLoaded += OnSceneLoaded;
 
+            currentCheckpoint = null;
             canDoActions = true;
         }
 
         void OnSceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
         {
-            PlayerSpawn playerSpawn = FindObjectsOfType<PlayerSpawn>().FirstOrDefault(x => x.gameObject.scene == scene);
-            if (playerSpawn != null)
-            {
-                transform.position = playerSpawn.transform.position;
-            }
+            currentCheckpoint = null;
         }
 
         void OnTriggerEnter2D(Collider2D other)
@@ -55,6 +58,24 @@ namespace Ghost.GameLogic.Player
         {
             if (other.CompareTag("Interactable"))
             {
+                Checkpoint checkpoint = other.GetComponent<Checkpoint>();
+                LevelPortal levelPortal = other.GetComponent<LevelPortal>();
+
+                if (checkpoint != null)
+                {
+                    if (checkpoint.isActive)
+                    {
+                        currentCheckpoint = checkpoint;
+                    }
+                }
+                
+                else if (levelPortal != null)
+                {
+                    if (levelPortal.isChangingLevel)
+                    {
+                        stats.lastPortalDirection = levelPortal.portalDirection;
+                    }
+                }
             }
         }
 
