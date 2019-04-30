@@ -12,7 +12,9 @@ namespace Ghost.Mechanics.Player
         
         public bool isInvisible;
 
-        bool isReady;
+        public bool isReady;
+        public float reloadProgress;
+        public bool isReloading;
         
         PlayerInput playerInput;
         
@@ -22,6 +24,8 @@ namespace Ghost.Mechanics.Player
 
             isInvisible = false;
             isReady = true;
+            reloadProgress = 0;
+            isReloading = false;
         }
 
         void Update()
@@ -46,7 +50,16 @@ namespace Ghost.Mechanics.Player
 
         IEnumerator Reload()
         {
-            yield return new WaitForSeconds(reloadTime);
+            reloadProgress = 0;
+            isReloading = true;
+
+            while (reloadProgress < 1.0f)
+            {
+                reloadProgress += Time.deltaTime;
+                yield return new WaitForEndOfFrame();
+            }
+
+            isReloading = false;
             isReady = true;
         }
     }
