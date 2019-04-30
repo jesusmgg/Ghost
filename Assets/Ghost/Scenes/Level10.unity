@@ -179,6 +179,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4091604412248792041, guid: 5416d8d55a5554348ac816fed067d76f,
+        type: 3}
+      propertyPath: value
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5416d8d55a5554348ac816fed067d76f, type: 3}
 --- !u!114 &15856244 stripped
@@ -881,6 +886,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5099409132720257102, guid: fc6d0270b918e7548a8eb6c0ded1e770,
+        type: 3}
+      propertyPath: tombs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5099409132720257102, guid: fc6d0270b918e7548a8eb6c0ded1e770,
+        type: 3}
+      propertyPath: tombs.Array.data[0]
+      value: 
+      objectReference: {fileID: 1875780298}
     - target: {fileID: 6822604161700843420, guid: fc6d0270b918e7548a8eb6c0ded1e770,
         type: 3}
       propertyPath: maxSpeed
@@ -901,16 +916,6 @@ PrefabInstance:
       propertyPath: waitTime
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5099409132720257102, guid: fc6d0270b918e7548a8eb6c0ded1e770,
-        type: 3}
-      propertyPath: tombs.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5099409132720257102, guid: fc6d0270b918e7548a8eb6c0ded1e770,
-        type: 3}
-      propertyPath: tombs.Array.data[0]
-      value: 
-      objectReference: {fileID: 1875780298}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc6d0270b918e7548a8eb6c0ded1e770, type: 3}
 --- !u!1001 &491601372
@@ -4768,6 +4773,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4091604412248792041, guid: 5416d8d55a5554348ac816fed067d76f,
+        type: 3}
+      propertyPath: value
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5416d8d55a5554348ac816fed067d76f, type: 3}
 --- !u!114 &794955450 stripped
@@ -7396,7 +7406,7 @@ PrefabInstance:
     - target: {fileID: 4091604412248792041, guid: 5416d8d55a5554348ac816fed067d76f,
         type: 3}
       propertyPath: value
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5416d8d55a5554348ac816fed067d76f, type: 3}
@@ -7902,22 +7912,22 @@ PrefabInstance:
     - target: {fileID: 4095075201011383875, guid: 5b056bcf1a6379e40b889cbec969b8eb,
         type: 3}
       propertyPath: position2.y
-      value: 6
+      value: 17.77
       objectReference: {fileID: 0}
     - target: {fileID: 4095075201011383875, guid: 5b056bcf1a6379e40b889cbec969b8eb,
         type: 3}
       propertyPath: position2.x
-      value: -20
+      value: 22.95
       objectReference: {fileID: 0}
     - target: {fileID: 4095075201011383875, guid: 5b056bcf1a6379e40b889cbec969b8eb,
         type: 3}
       propertyPath: position1.x
-      value: -20
+      value: 22.95
       objectReference: {fileID: 0}
     - target: {fileID: 4095075201011383875, guid: 5b056bcf1a6379e40b889cbec969b8eb,
         type: 3}
       propertyPath: position1.y
-      value: -10.5
+      value: -6.32
       objectReference: {fileID: 0}
     - target: {fileID: 4095075201011383933, guid: 5b056bcf1a6379e40b889cbec969b8eb,
         type: 3}
