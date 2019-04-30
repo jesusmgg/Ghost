@@ -1,4 +1,5 @@
 using Ghost.Audio;
+using Ghost.Publishing.Kongregate;
 using Ghost.Stats;
 using UnityEngine;
 
@@ -14,6 +15,7 @@ namespace Ghost.Props.Interactable
 
         PlayerStats playerStats;
         AudioPlayer audioPlayer;
+        KongregateApiManager kongregateApiManager;
 
         protected override void Start()
         {
@@ -21,6 +23,7 @@ namespace Ghost.Props.Interactable
 
             playerStats = FindObjectOfType<PlayerStats>();
             audioPlayer = FindObjectOfType<AudioPlayer>();
+            kongregateApiManager = FindObjectOfType<KongregateApiManager>();
 
             isDead = false;
         }
@@ -32,6 +35,8 @@ namespace Ghost.Props.Interactable
                 isDead = true;
                 playerStats.money += value;
                 particles.Play();
+                
+                kongregateApiManager.SubmitStats("LifeStolen", playerStats.money);
                 
                 audioPlayer.PlaySound(audioPlayer.tomb);
             }
