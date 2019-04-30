@@ -2,6 +2,7 @@ using System.Linq;
 using Ghost.Input;
 using Ghost.Props;
 using Ghost.Props.Interactable;
+using Ghost.Props.Message;
 using Ghost.Stats;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -18,9 +19,8 @@ namespace Ghost.GameLogic.Player
         
         [Header("Object detection")]
         public BaseInteractableObject currentInteractableObject;
-
-        [Header("Checkpoints")]
         public Checkpoint currentCheckpoint;
+        public Message currentMessage;
         
         PlayerInput input;
         PlayerStats stats;
@@ -39,6 +39,7 @@ namespace Ghost.GameLogic.Player
         void OnSceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
         {
             currentCheckpoint = null;
+            currentMessage = null;
         }
 
         void OnTriggerEnter2D(Collider2D other)
@@ -51,6 +52,11 @@ namespace Ghost.GameLogic.Player
                 {
                     currentInteractableObject = otherObject;    
                 }
+            }
+            
+            else if (other.CompareTag("Message"))
+            {
+                currentMessage = other.GetComponent<Message>();
             }
         }
 
@@ -89,6 +95,11 @@ namespace Ghost.GameLogic.Player
                 {
                     currentInteractableObject = null;    
                 }
+            }
+            
+            else if (other.CompareTag("Message"))
+            {
+                currentMessage = null;
             }
         }
     }

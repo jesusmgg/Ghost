@@ -17,4 +17,31 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Ghost/Scenes/Level02.unity
     guid: 21299e0e078648c45bd6bf98a3bf3012
+  - enabled: 1
+    path: Assets/Ghost/Scenes/Level10.unity
+    guid: 03a2e63750c37a44990c9851bc233f3a
+  - enabled: 1
+    path: Assets/Ghost/Scenes/Level11.unity
+    guid: 1a4724b607f2441428df39ee838f129b
+  - enabled: 1
+    path: Assets/Ghost/Scenes/Level12.unity
+    guid: 677979088b7bef24dba0939af5a5175a
+  - enabled: 1
+    path: Assets/Ghost/Scenes/Level20.unity
+    guid: 1615fb037c60a164f864449791bd8c53
+  - enabled: 1
+    path: Assets/Ghost/Scenes/Level21.unity
+    guid: 02f69f5a496c10e41859576e508c65eb
+  - enabled: 1
+    path: Assets/Ghost/Scenes/Level22.unity
+    guid: 443e61a933ae53d478636c0fecf26c36
+  - enabled: 1
+    path: Assets/Ghost/Scenes/Level30.unity
+    guid: 4e605012e49d0914b9deaf1f4b4eb0f6
+  - enabled: 1
+    path: Assets/Ghost/Scenes/Level31.unity
+    guid: 19fe2ed825015f54199cdc0921026d65
+  - enabled: 1
+    path: Assets/Ghost/Scenes/Level32.unity
+    guid: ff8c408e1ca8f174ba8caec58a333d5b
   m_configObjects: {}

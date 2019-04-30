@@ -15,10 +15,12 @@ GameObject:
   - component: {fileID: 6822604161700843422}
   - component: {fileID: 8643925844206083074}
   - component: {fileID: 6822604161700843418}
+  - component: {fileID: 2930854790335110337}
   - component: {fileID: 6822604161700843419}
   - component: {fileID: 6822604161700843416}
   - component: {fileID: 6822604161700843417}
   - component: {fileID: 6822604161700843409}
+  - component: {fileID: 589733926438050556}
   m_Layer: 0
   m_Name: Shooting dog
   m_TagString: Enemy
@@ -112,6 +114,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 768
   hasDetectedPlayer: 0
+  isStatic: 0
   wanderingTime: 4
   waitTime: 2
   direction: {x: 0, y: 0}
@@ -144,6 +147,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriterState: 0
   transitionTime: 250
+--- !u!114 &2930854790335110337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6822604161700843399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f9484176edf44b9bb52ad56de7f7885, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &6822604161700843419
 Animator:
   serializedVersion: 3
@@ -236,6 +251,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.1650658, y: 1.8051891}
   m_EdgeRadius: 0
+--- !u!114 &589733926438050556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6822604161700843399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17771e768c184d33aa36f708c446b287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDead: 0
 --- !u!1001 &3949773209801203237
 PrefabInstance:
   m_ObjectHideFlags: 0

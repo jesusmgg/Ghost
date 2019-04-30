@@ -9,6 +9,8 @@ namespace Ghost.UI
     {
         public Text text;
         
+        bool isVisible;
+        
         Animator animator;
 
         PlayerActions playerActions;
@@ -20,16 +22,46 @@ namespace Ghost.UI
 
             playerActions = FindObjectOfType<PlayerActions>();
             playerStats = FindObjectOfType<PlayerStats>();
+
+            isVisible = false;
+        }
+
+        void Update()
+        {
+            if (playerActions.currentMessage != null)
+            {
+                if (!isVisible)
+                {
+                    text.text = playerActions.currentMessage.message;
+                    Show();
+                }
+            }
+            else
+            {
+                if (isVisible)
+                {
+                    text.text = "";
+                    Hide();
+                }
+            }
         }
 
         void Show()
         {
-            animator.SetBool("Show", true);
+            if (!isVisible)
+            {
+                animator.SetBool("Show", true);
+                isVisible = true;
+            }
         }
 
         void Hide()
         {
-            animator.SetBool("Show", false);
+            if (isVisible)
+            {
+                animator.SetBool("Show", false);
+                isVisible = false;
+            }
         }
     }
 }

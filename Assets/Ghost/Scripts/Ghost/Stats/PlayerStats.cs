@@ -1,8 +1,11 @@
-﻿using Ghost.GameLogic.Player;
+﻿using System.Collections;
+using Ghost.Audio;
+using Ghost.GameLogic.Player;
 using Ghost.Mechanics;
 using Ghost.Utils.Enums;
 using Ghost.Weapons.Projectiles;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Ghost.Stats
 {
@@ -15,29 +18,48 @@ namespace Ghost.Stats
         public string currentLevel = "Level00";
         public PortalDirection lastPortalDirection = PortalDirection.Right;
 
+        public bool gameStarted;
+
         PlayerRespawning respawning;
+
+        AudioPlayer audioPlayer;
 
         void Awake()
         {
             respawning = GetComponent<PlayerRespawning>();
+            
+            gameStarted = false;
         }
 
         void Start()
         {
+            audioPlayer = FindObjectOfType<AudioPlayer>();
+            
             if (health > 0)
             {
                 isDead = false;
             }
         }
 
+        void OnSceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
+        {
+            currentLevel = scene.name;
+            if (gameStarted)
+            {
+                SaveStats();
+            }
+        }
+
         void OnEnable()
         {
             respawning.onRespawn.AddListener(Revive);
+            SceneManager.sceneLoaded += OnSceneLoaded;
         }
         
         void OnDisable()
         {
             respawning.onRespawn.RemoveListener(Revive);
+            SceneManager.sceneLoaded -= OnSceneLoaded;
         }
 
         void Update()
@@ -81,6 +103,8 @@ namespace Ghost.Stats
 
         void Revive()
         {
+            audioPlayer.PlaySound(audioPlayer.dying);
+            
             health = 1;
             isDead = false;
         }
@@ -93,6 +117,44 @@ namespace Ghost.Stats
             if (lastPortalDirection == PortalDirection.Right) {return PortalDirection.Left;}
 
             return PortalDirection.Right;
+        }
+
+        void SaveStats()
+        {
+            StartCoroutine(DoSaveStats());
+        }
+
+        IEnumerator DoSaveStats()
+        {
+            yield return new WaitForEndOfFrame();
+            
+            PlayerPrefs.SetInt("HasSave", 1);
+            
+            PlayerPrefs.SetInt("Money", money);
+            PlayerPrefs.SetFloat("Health", health);
+            PlayerPrefs.SetString("CurrentLevel", currentLevel);
+            PlayerPrefs.SetInt("LastPortalDirection", (int) lastPortalDirection);
+            
+            PlayerPrefs.Save();
+            
+            Debug.Log("Game Saved");
+        }
+
+        public void LoadStats()
+        {
+            if (HasSave())
+            {
+                Debug.Log("Loading game");
+                money = PlayerPrefs.GetInt("Money");
+                health = PlayerPrefs.GetFloat("Health");
+                currentLevel = PlayerPrefs.GetString("CurrentLevel");
+                lastPortalDirection = (PortalDirection) PlayerPrefs.GetInt("LastPortalDirection");
+            }
+        }
+
+        public bool HasSave()
+        {
+            return PlayerPrefs.HasKey("HasSave");
         }
     }
 }

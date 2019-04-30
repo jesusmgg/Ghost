@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reloadPeriod: 1.5
   shootPoint: {fileID: 217350409734384227}
-  projectilePrefab: {fileID: 6551338906402660361, guid: be2eb0b38abfd2843af8c46eb1b7aa85,
+  projectilePrefab: {fileID: 1021118379015807884, guid: be2eb0b38abfd2843af8c46eb1b7aa85,
     type: 3}
 --- !u!1 &6711014497996359792
 GameObject:

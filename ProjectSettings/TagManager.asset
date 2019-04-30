@@ -11,6 +11,7 @@ TagManager:
   - TestTag3
   - Projectile
   - Enemy
+  - Message
   layers:
   - Default
   - TransparentFX

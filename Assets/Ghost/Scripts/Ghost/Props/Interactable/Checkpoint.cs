@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Ghost.Audio;
 using UnityEngine;
 
 namespace Ghost.Props.Interactable
@@ -10,6 +11,8 @@ namespace Ghost.Props.Interactable
         public ParticleSystem sparksParticles;
 
         static List<Checkpoint> checkpoints;
+
+        AudioPlayer audioPlayer;
 
         void OnEnable()
         {
@@ -30,14 +33,31 @@ namespace Ghost.Props.Interactable
         {
             base.Start();
 
+            audioPlayer = FindObjectOfType<AudioPlayer>();
+
             isActive = false;
+        }
+
+        protected override void OnTriggerEnter2D(Collider2D other)
+        {
+            base.OnTriggerEnter2D(other);
+            
+            if (other.CompareTag("Player"))
+            {
+                Interact();
+            }
         }
 
         public override void Interact()
         {
-            DisableAllCheckpoints();
-            isActive = true;
-            sparksParticles.Play();
+            if (!isActive)
+            {
+                DisableAllCheckpoints();
+                isActive = true;
+                sparksParticles.Play();
+                
+                audioPlayer.PlaySound(audioPlayer.save);
+            }
         }
 
         static void DisableAllCheckpoints()
