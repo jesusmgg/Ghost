@@ -4,6 +4,8 @@ namespace Ghost.Audio
 {
     public class AudioPlayer : MonoBehaviour
     {
+        public bool isMuted;
+    
         [Header("Music and ambiance")]
         public AudioClip menuMusic;
         public AudioClip levelMusic;
@@ -26,6 +28,18 @@ namespace Ghost.Audio
 
             musicPlayer = gameObject.AddComponent<AudioSource>();
             ambiancePlayer = gameObject.AddComponent<AudioSource>();
+        }
+
+        void Update()
+        {
+            if (UnityEngine.Input.GetKeyDown(KeyCode.M))
+            {
+                isMuted = !isMuted;
+            }
+
+            audioSource.mute = isMuted;
+            musicPlayer.mute = isMuted;
+            ambiancePlayer.mute = isMuted;
         }
 
         public void PlaySound(AudioClip clip)
