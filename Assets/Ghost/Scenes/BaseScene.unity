@@ -811,7 +811,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 429830845}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 38189d3b8bc54d7d97c53219512fafdf, type: 3}
   m_Name: 
@@ -2666,6 +2666,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98f65de0f0004c03876244b1aecf60e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isMuted: 0
   menuMusic: {fileID: 8300000, guid: 1466d4489a7fdb042af3ba544ead7e31, type: 3}
   levelMusic: {fileID: 8300000, guid: d69319947ba4a2f48b2a54b18a872688, type: 3}
   dog: {fileID: 8300000, guid: bf40f177637d5e94d80488cd498dbf67, type: 3}

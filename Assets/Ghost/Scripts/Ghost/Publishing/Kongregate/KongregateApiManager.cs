@@ -13,7 +13,10 @@ namespace Ghost.Publishing.Kongregate
 
         public void SubmitStats(string statName, int value)
         {
-            kongregateApi.SubmitStats(statName, value);
+            if (kongregateApi.isActiveAndEnabled)
+            {
+                kongregateApi.SubmitStats(statName, value);    
+            }
         }
     }
 }
